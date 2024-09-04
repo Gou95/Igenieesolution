@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.VDP_Lock_Fragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="11dp"
+            android:backgroundTint="@color/purple"
+            android:layout_marginBottom="10dp"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VDP Lock"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"/>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginHorizontal="60dp">
+
+
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+
+                       >
+
+                       <LinearLayout
+                           android:layout_centerVertical="true"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical"
+                           >
+
+                           <androidx.cardview.widget.CardView
+                               android:id="@+id/card_start"
+                               android:layout_width="50dp"
+                               android:layout_height="50dp"
+                               app:cardCornerRadius="25dp"
+                               android:layout_alignParentEnd="true"
+                               android:backgroundTint="#ff99cc00"
+                               android:layout_marginEnd="10dp"
+
+                               >
+                               <ImageView
+                                   android:layout_width="35dp"
+                                   android:layout_height="35dp"
+                                   android:src="@drawable/on_off"
+                                   android:layout_gravity="center"/>
+
+
+
+                           </androidx.cardview.widget.CardView>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="START"
+                               android:layout_marginTop="5dp"
+                               android:textSize="16dp"
+                               android:textColor="@color/white" />
+
+
+
+
+                       </LinearLayout>
+
+                       <org.videolan.libvlc.media.VideoView
+                           android:id="@+id/videoView"
+                           android:layout_width="320dp"
+                           android:layout_height="300dp"
+                           android:layout_centerInParent="true"
+                           android:layout_centerHorizontal="true"
+                           android:layout_marginHorizontal="100dp"/>
+
+
+                     />
+
+<!--                       <include layout="@layout/content_main" android:id="@+id/contentMain"-->
+<!--                           />-->
+<!--                       <VideoView-->
+<!--                           android:id="@+id/video"-->
+<!--                           android:layout_width="match_parent"-->
+<!--                           android:layout_height="320dp"-->
+<!--                           android:layout_centerInParent="true"-->
+<!--                           android:layout_centerHorizontal="true"-->
+<!--                           android:keepScreenOn="true"-->
+<!--                           android:layout_marginHorizontal="100dp"-->
+
+<!--                          />-->
+
+
+
+                       <LinearLayout
+                          android:layout_alignParentEnd="true"
+                           android:layout_width="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <androidx.cardview.widget.CardView
+                               android:id="@+id/card_stop"
+                               android:layout_width="50dp"
+                               android:layout_height="50dp"
+                               app:cardCornerRadius="25dp"
+                               android:layout_alignParentEnd="true"
+                               android:backgroundTint="@color/red"
+                               android:layout_marginEnd="10dp"
+
+                               >
+                               <ImageView
+                                   android:id="@id/power"
+                                   android:layout_width="35dp"
+                                   android:layout_height="35dp"
+                                   android:src="@drawable/on_off"
+                                   android:layout_gravity="center"/>
+
+
+
+                           </androidx.cardview.widget.CardView>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="STOP"
+                               android:layout_marginTop="5dp"
+                               android:textSize="16dp"
+                               android:textColor="@color/white" />
+
+
+
+
+                       </LinearLayout>
+
+
+                   </RelativeLayout>
+
+
+               </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_lock"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/baseline_lock"/>
+
+                    <TextView
+                        android:id="@+id/txt_lock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="18dp"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
