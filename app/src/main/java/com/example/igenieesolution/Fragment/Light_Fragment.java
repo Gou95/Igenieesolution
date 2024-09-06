@@ -62,7 +62,7 @@ public class Light_Fragment extends Fragment {
             @Override
 
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                binding.txtHundred.setText(i+"100");
+                binding.txtHundred.setText(i+"/100");
              //   viewModel.getLightDataDimming("4",dimmingValue1,"6000","1");
 
             }
@@ -187,17 +187,17 @@ public class Light_Fragment extends Fragment {
             binding.power.setColorFilter(Color.GREEN);
 
             viewModel.getLightModelData("1");
-//            binding.switchLight1.setChecked(true);
-//            binding.switchLight2.setChecked(true);
-//            binding.switchLight3.setChecked(true);
-//            binding.switchLight4.setChecked(true);
+            binding.switchLight1.setChecked(true);
+            binding.switchLight2.setChecked(true);
+            binding.switchLight3.setChecked(true);
+            binding.switchLight4.setChecked(true);
         } else {
             binding.power.setColorFilter(Color.RED);
             viewModel.getLightModelData("0");
-//            binding.switchLight1.setChecked(false);
-//            binding.switchLight2.setChecked(false);
-//            binding.switchLight3.setChecked(false);
-//            binding.switchLight4.setChecked(false);
+            binding.switchLight1.setChecked(false);
+            binding.switchLight2.setChecked(false);
+            binding.switchLight3.setChecked(false);
+            binding.switchLight4.setChecked(false);
         }
     }
 

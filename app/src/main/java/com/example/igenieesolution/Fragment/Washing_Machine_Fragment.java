@@ -42,7 +42,7 @@ public class Washing_Machine_Fragment extends Fragment {
         db = new DataBaseHelper(getContext());
         deviceId = db.getDeviceID("DEVICE_WASHER");
 
-        binding.linearOnOff.setBackgroundColor(Color.RED);
+      //  binding.linearOnOff.setBackgroundColor(Color.RED);
 
         onInitMethod();
         onAttachObservers();
@@ -98,10 +98,23 @@ public class Washing_Machine_Fragment extends Fragment {
                         binding.txtTotalHour.setText(String.valueOf(totalHour));
                         binding.txtTotalMinute.setText(String.valueOf(totalMinute));
 
+
                         String runState = washingData.getRunState().getCurrentState();
-                        boolean runStateMode = "POWER_ON".equalsIgnoreCase(runState);
-                        binding.linearCurrentState.setBackgroundColor(runStateMode ? Color.GREEN : Color.RED);
-                        binding.txtPowerOnOff.setText(runStateMode ? "POWER_ON" : "POWER_OFF");
+                        updateUIBasedOnState(runState);
+//                        String runState = washingData.getRunState().getCurrentState();
+//                        boolean runStateModeRun = "RUNNING".equalsIgnoreCase(runState);
+//                        boolean runStateModeRising = "RINSING".equalsIgnoreCase(runState);
+//                        boolean runStateModeSpining = "SPINNING".equalsIgnoreCase(runState);
+//
+//                        binding.linearCurrentState.setBackgroundColor(runStateModeRun ? Color.GREEN : Color.RED);
+//                        binding.txtPowerOnOff.setText(runStateModeRun ? "RUNNING" : "POWER_OFF");
+//
+//                        binding.linearCurrentState.setBackgroundColor(runStateModeRising ? Color.BLUE : Color.RED);
+//                        binding.txtPowerOnOff.setText(runStateModeRising ? "RINSING" : "POWER_OFF");
+//
+//                        binding.linearCurrentState.setBackgroundColor(runStateModeSpining ? Color.GRAY : Color.RED);
+//                        binding.txtPowerOnOff.setText(runStateModeSpining ? "SPINNING" : "POWER_OFF");
+
 
 
                     } else {
@@ -123,6 +136,27 @@ public class Washing_Machine_Fragment extends Fragment {
                 Toast.makeText(getContext(), error, Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void updateUIBasedOnState(String runState) {
+
+        boolean runStateModeRun = "RUNNING".equalsIgnoreCase(runState);
+        boolean runStateModeRising = "RINSING".equalsIgnoreCase(runState);
+        boolean runStateModeSpinning = "SPINNING".equalsIgnoreCase(runState);
+
+        if (runStateModeRun) {
+            binding.linearCurrentState.setBackgroundColor(Color.GREEN);
+            binding.txtPowerOnOff.setText("RUNNING");
+        } else if (runStateModeRising) {
+            binding.linearCurrentState.setBackgroundColor(Color.BLUE);
+            binding.txtPowerOnOff.setText("RINSING");
+        } else if (runStateModeSpinning) {
+            binding.linearCurrentState.setBackgroundColor(Color.GRAY);
+            binding.txtPowerOnOff.setText("SPINNING");
+        } else {
+            binding.linearCurrentState.setBackgroundColor(Color.RED);
+            binding.txtPowerOnOff.setText("POWER_OFF");
+        }
     }
 
 
@@ -149,7 +183,7 @@ public class Washing_Machine_Fragment extends Fragment {
             // Reset the animation state after the duration of the animation
             view.postDelayed(() -> {
                 isPowerOn = false;
-            }, 1600); // 800ms for scale up + 800ms for scale down
+            }, 800); // 800ms for scale up + 800ms for scale down
         }
     }
 

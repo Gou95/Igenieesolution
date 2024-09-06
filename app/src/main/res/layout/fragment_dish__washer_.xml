@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.Dish_Washer_Fragment">
 
@@ -95,7 +96,7 @@
 
 
                             <LinearLayout
-                                android:id="@+id/linear_pause"
+                                android:id="@+id/linear_pauss"
                                 android:layout_width="120dp"
                                 android:layout_height="50dp"
                                 android:background="@drawable/washing_back"
@@ -131,6 +132,7 @@
                                 android:orientation="horizontal"
                                 android:gravity="center"
                                 android:layout_marginTop="20dp"
+
                                 >
 
 
@@ -179,10 +181,11 @@
                                     android:orientation="horizontal"
                                     android:layout_gravity="center"
                                     android:layout_marginTop="10dp"
+
                                    >
 
                                     <LinearLayout
-                                        android:id="@+id/linear_clean"
+                                        android:id="@+id/linear_off"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -216,7 +219,7 @@
 
 
                                     <LinearLayout
-                                        android:id="@+id/linear_sleep"
+                                        android:id="@+id/linear_standby"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -248,7 +251,7 @@
 
                                     </LinearLayout>
                                     <LinearLayout
-                                        android:id="@+id/linear_slient"
+                                        android:id="@+id/linear_running"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -283,7 +286,7 @@
 
 
                                     <LinearLayout
-                                        android:id="@+id/linear_humidity"
+                                        android:id="@+id/linear_pause"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -316,7 +319,7 @@
 
                                     </LinearLayout>
                                     <LinearLayout
-                                        android:id="@+id/linear_circulator"
+                                        android:id="@+id/linear_completed"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -348,7 +351,7 @@
 
                                     </LinearLayout>
                                     <LinearLayout
-                                        android:id="@+id/linear_baby_care"
+                                        android:id="@+id/linear_fail"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -382,7 +385,7 @@
 
                                     </LinearLayout>
                                     <LinearLayout
-                                        android:id="@+id/linear_dual_clean"
+                                        android:id="@+id/linear_reserved"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -417,7 +420,7 @@
                                     </LinearLayout>
 
                                     <LinearLayout
-                                        android:id="@+id/linear_audio"
+                                        android:id="@+id/linear_rinsing"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -448,7 +451,7 @@
 
                                     </LinearLayout>
                                     <LinearLayout
-                                        android:id="@+id/linear_smart"
+                                        android:id="@+id/linear_drying"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -480,7 +483,7 @@
                                     </LinearLayout>
 
                                     <LinearLayout
-
+                                        android:id="@+id/linear_storing"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -512,7 +515,7 @@
                                     </LinearLayout>
 
                                     <LinearLayout
-
+                                        android:id="@+id/linear_cancel"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -544,7 +547,7 @@
                                     </LinearLayout>
 
                                     <LinearLayout
-                                        android:id="@+id/linear_fast"
+                                        android:id="@+id/linear_error"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
@@ -1156,4 +1159,4 @@
 
 
 
-</ScrollView>
+</LinearLayout>

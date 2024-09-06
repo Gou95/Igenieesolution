@@ -48,7 +48,7 @@ public class Dish_Washer_Fragment extends Fragment {
             // Reset the animation state after the duration of the animation
             view.postDelayed(() -> {
                 isChecked = false;
-            }, 1600); // 800ms for scale up + 800ms for scale down
+            }, 800); // 800ms for scale up + 800ms for scale down
         }
     }
 
