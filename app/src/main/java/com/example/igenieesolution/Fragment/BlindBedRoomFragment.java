@@ -25,7 +25,7 @@ public class BlindBedRoomFragment extends Fragment {
         // Inflate the layout for this fragment
         binding =  FragmentBlindBedRoomBinding.inflate(inflater, container, false);
 
-        binding.imgCurtain.setImageResource(R.drawable.curtainup);
+        binding.imgCurtain.setImageResource(R.drawable.upblind);
         binding.cardArrowUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

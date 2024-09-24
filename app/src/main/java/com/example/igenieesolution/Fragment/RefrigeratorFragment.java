@@ -181,18 +181,19 @@ public class RefrigeratorFragment extends Fragment {
 
             binding.cardOnoff.setCardBackgroundColor(expressMode ? Color.GREEN : Color.RED);
             binding.imgDoor.setImageResource(expressMode ? R.drawable.open_ref : R.drawable.fridge);
+            binding.txtMode.setText(expressMode ? "ON" : "OFF" );
 
-          for (SetRefrigeratorResponse.Doorstatus doorstatus : response.getDoorStatus()){
-              if (doorstatus != null){
-                  binding.txtDoorState.setText(doorstatus.getDoorState());
-                  binding.txtDoorMain.setText(doorstatus.getLocationName());
-              }
-          }
+//          for (SetRefrigeratorResponse.Doorstatus doorstatus : response.getDoorStatus()){
+//              if (doorstatus != null){
+//                  binding.txtDoorState.setText("Door State : "+doorstatus.getDoorState());
+//                  binding.txtDoorMain.setText( doorstatus.getLocationName());
+//              }
+//          }
 
-          String autoFilter = response.getRefrigeration().getFreshAirFilter();
-          binding.txtAuto.setText(autoFilter);
-          String mode = response.getRefrigeration().getExpressModeName();
-          binding.txtMode.setText(mode);
+//          String autoFilter = response.getRefrigeration().getFreshAirFilter();
+//          binding.txtAuto.setText(autoFilter);
+//          String mode = response.getRefrigeration().getExpressModeName();
+//          binding.txtMode.setText(mode);
         }
     }
 

@@ -432,7 +432,7 @@
                                     android:id="@+id/linear_low"
                                     android:layout_width="100dp"
                                     android:layout_height="45dp"
-                                    android:background="@drawable/washingunder_back"
+                                    android:background="@drawable/card_gradiantback_color"
                                     android:orientation="horizontal"
                                     android:gravity="center">
 
@@ -460,7 +460,7 @@
                                     android:id="@+id/linear_medium"
                                     android:layout_width="100dp"
                                     android:layout_height="45dp"
-                                    android:background="@drawable/washingunder_back"
+                                    android:background="@drawable/card_gradiantback_color"
                                     android:orientation="horizontal"
                                     android:gravity="center"
                                     android:layout_marginLeft="10dp"
@@ -499,7 +499,7 @@
                                     android:id="@+id/linear_high"
                                     android:layout_width="100dp"
                                     android:layout_height="45dp"
-                                    android:background="@drawable/washingunder_back"
+                                    android:background="@drawable/card_gradiantback_color"
                                     android:orientation="horizontal"
                                     android:gravity="center"
                                     android:layout_marginTop="20dp">
@@ -527,7 +527,7 @@
                                     android:id="@+id/linear_power"
                                     android:layout_width="100dp"
                                     android:layout_height="45dp"
-                                    android:background="@drawable/washingunder_back"
+                                    android:background="@drawable/card_gradiantback_color"
                                     android:orientation="horizontal"
                                     android:gravity="center"
                                     android:layout_marginTop="20dp"
@@ -569,7 +569,7 @@
                                  android:id="@+id/linear_audio2"
                                  android:layout_width="100dp"
                                  android:layout_height="45dp"
-                                 android:background="@drawable/washingunder_back"
+                                 android:background="@drawable/card_gradiantback_color"
                                  android:orientation="horizontal"
                                  android:gravity="center"
                                  android:layout_marginTop="20dp">
@@ -666,7 +666,7 @@
                                     <RelativeLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:background="@drawable/washing_back"
+                                        android:background="@drawable/washingunder_back"
                                         android:orientation="horizontal">
 
                                         <LinearLayout

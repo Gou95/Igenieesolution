@@ -71,7 +71,7 @@
                                 android:id="@+id/linear_start"
                                 android:layout_width="120dp"
                                 android:layout_height="50dp"
-                                android:background="@drawable/washingunder_back"
+                                android:background="@drawable/card_gradiantback_color"
                                 android:orientation="horizontal"
                                 android:gravity="center">
 
@@ -99,7 +99,7 @@
                                 android:id="@+id/linear_pauss"
                                 android:layout_width="120dp"
                                 android:layout_height="50dp"
-                                android:background="@drawable/washingunder_back"
+                                android:background="@drawable/card_gradiantback_color"
                                 android:orientation="horizontal"
                                 android:gravity="center"
                                 android:layout_marginTop="20dp">
@@ -128,7 +128,7 @@
                                 android:id="@+id/linear_onOff"
                                 android:layout_width="120dp"
                                 android:layout_height="50dp"
-                                android:background="@drawable/washingunder_back"
+                                android:background="@drawable/card_gradiantback_color"
                                 android:orientation="horizontal"
                                 android:gravity="center"
                                 android:layout_marginTop="20dp"

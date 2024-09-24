@@ -18,7 +18,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:layout_marginHorizontal="10dp"
-           android:layout_marginTop="10dp"
+           android:layout_marginTop="5dp"
            app:cardCornerRadius="10dp"
            app:cardElevation="11dp"
            android:backgroundTint="@color/black"
@@ -71,7 +71,7 @@
                                android:id="@+id/linear_start"
                                android:layout_width="120dp"
                                android:layout_height="50dp"
-                               android:background="@drawable/washingunder_back"
+                               android:background="@drawable/card_gradiantback_color"
                                android:orientation="horizontal"
                                android:gravity="center">
 
@@ -99,7 +99,7 @@
                                android:id="@+id/linear_pause"
                                android:layout_width="120dp"
                                android:layout_height="50dp"
-                               android:background="@drawable/washingunder_back"
+                               android:background="@drawable/card_gradiantback_color"
                                android:orientation="horizontal"
                                android:gravity="center"
                                android:layout_marginTop="20dp">
@@ -128,7 +128,7 @@
                                android:id="@+id/linear_onOff"
                                android:layout_width="120dp"
                                android:layout_height="50dp"
-                               android:background="@drawable/washingunder_back"
+                               android:background="@drawable/card_gradiantback_color"
                                android:orientation="horizontal"
                                android:gravity="center"
                                android:layout_marginTop="20dp"
@@ -159,7 +159,7 @@
                                android:id="@+id/linear_wakeup"
                                android:layout_width="120dp"
                                android:layout_height="50dp"
-                               android:background="@drawable/washingunder_back"
+                               android:background="@drawable/card_gradiantback_color"
                                android:orientation="horizontal"
                                android:gravity="center"
                                android:layout_marginTop="20dp">
