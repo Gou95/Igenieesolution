@@ -52,7 +52,7 @@ public class LightRepository {
 
            @Override
            public void onFailure(Call<LightResponse> call, Throwable t) {
-               listener.onError("something went to wrong" + t.getMessage());
+             //  listener.onError("something went to wrong" + t.getMessage());
            }
 
 
@@ -72,7 +72,7 @@ public class LightRepository {
 
             @Override
             public void onFailure(Call<LightResponse> call, Throwable t) {
-                listener.onError("something went to wrong" + t.getMessage());
+               // listener.onError("something went to wrong" + t.getMessage());
             }
 
 

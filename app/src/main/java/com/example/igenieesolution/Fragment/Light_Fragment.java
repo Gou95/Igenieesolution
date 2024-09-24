@@ -284,10 +284,10 @@ public class Light_Fragment extends Fragment {
 
                 }
                 else {
-                    Toast.makeText(getContext(), "Response is null", Toast.LENGTH_SHORT).show();
+                  //  Toast.makeText(getContext(), "Response is null", Toast.LENGTH_SHORT).show();
                 }
             } else {
-                Toast.makeText(getContext(), "Invalid Light response", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(getContext(), "Invalid Light response", Toast.LENGTH_SHORT).show();
             }
 
         });

@@ -674,7 +674,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Light"
+                android:text="Lights"
                 android:gravity="center"
                 android:textAllCaps="true"
                 android:textSize="13dp"
@@ -1115,7 +1115,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Light"
+                android:text="Lights"
                 android:gravity="center"
                 android:textAllCaps="true"
                 android:textSize="13dp"
@@ -1557,7 +1557,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Light"
+                android:text="Lights"
                 android:gravity="center"
                 android:textAllCaps="true"
                 android:textSize="13dp"

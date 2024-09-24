@@ -22,6 +22,7 @@ import com.example.igenieesolution.Fragment.Light_Lobby_Fragment;
 import com.example.igenieesolution.Fragment.RefrigeratorFragment;
 import com.example.igenieesolution.Fragment.TVFragment;
 import com.example.igenieesolution.Fragment.VDP_Lock_Fragment;
+import com.example.igenieesolution.Fragment.Wash_Tower_Fragment;
 import com.example.igenieesolution.Fragment.Washing_Machine_Fragment;
 import com.example.igenieesolution.R;
 import com.example.igenieesolution.databinding.ActivityHomeBinding;
@@ -107,7 +108,7 @@ public class HomeActivity extends AppCompatActivity {
 
         binding.linearWashTower.setOnClickListener(view -> {
             handleClick(view, binding.linearRefrigerator, binding.linearAir, binding.linearWashingMachine, binding.linearLight,
-                    binding.linearAirPurifier,binding.linearCurtains,binding.linearDishWasher,binding.linearVdpLock, new Dish_Washer_Fragment());
+                    binding.linearAirPurifier,binding.linearCurtains,binding.linearDishWasher,binding.linearVdpLock, new Wash_Tower_Fragment());
         });
 
         binding.linearBedroomBlind.setOnClickListener(view -> {
