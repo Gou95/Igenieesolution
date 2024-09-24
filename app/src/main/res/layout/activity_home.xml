@@ -260,32 +260,83 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="10"
+        android:weightSum="2"
         android:background="@drawable/tool_gradiantback_color"
         android:layout_marginHorizontal="10dp"
         android:gravity="center"
-        android:scrollbars="none"
         android:visibility="gone"
         >
 
 
 
+        <LinearLayout
+            android:id="@+id/linear_lobbyAC"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="15dp"
+
+
+            >
+
+
+            <ImageView
+
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/air_conditioner"
+
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AC"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+         />
+
+
 <!--        <LinearLayout-->
-<!--                android:id="@+id/linear_tv"-->
+<!--            android:id="@+id/linear_refrigerator"-->
 <!--            android:layout_weight="1"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
 <!--            android:orientation="vertical"-->
 <!--            android:gravity="center"-->
-<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:padding="15dp"-->
 <!--            >-->
 
 
 <!--            <ImageView-->
 <!--                android:layout_width="60dp"-->
 <!--                android:layout_height="60dp"-->
-<!--                android:src="@drawable/monitor"-->
-<!--                android:padding="2dp"-->
+<!--                android:src="@drawable/refrigerator"-->
+
 <!--                />-->
 
 
@@ -293,12 +344,12 @@
 <!--            <TextView-->
 <!--                android:layout_width="match_parent"-->
 <!--                android:layout_height="wrap_content"-->
-<!--                android:text="TV"-->
+<!--                android:text="Refrigerator"-->
 <!--                android:gravity="center"-->
 <!--                android:textAllCaps="true"-->
 <!--                android:textSize="13dp"-->
 <!--                android:textStyle="bold"-->
-<!--                android:textColor="@color/black"-->
+<!--                android:textColor="@color/white"-->
 <!--                />-->
 
 
@@ -314,8 +365,350 @@
 <!--        <View-->
 <!--            android:layout_width="1dp"-->
 <!--            android:layout_height="match_parent"-->
-<!--            android:background="@color/black"-->
-<!--            android:layout_marginStart="10dp"/>-->
+<!--            android:background="@color/white"-->
+<!--         />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear_washingMachine"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--        android:padding="15dp"-->
+
+<!--            >-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/washing_machine"-->
+
+<!--                />-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Washing Machine"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+
+<!--                />-->
+
+
+
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--          />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear_air_purifier"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="15dp"-->
+<!--            >-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/air_purifier"-->
+<!--                />-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Air purify"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+
+
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--       />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear_vdpLock"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--         android:padding="15dp"-->
+<!--            >-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/lock"-->
+<!--                />-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="vdp lock"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+
+
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--          />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear_dish_washer"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="15dp"-->
+<!--            >-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/dishwasher"-->
+
+<!--                />-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Dish washer"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+
+
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--  />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear_washTower"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--       android:padding="15dp"-->
+<!--            >-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/door"-->
+
+<!--                />-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Wash Tower"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+
+
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--           />-->
+
+        <LinearLayout
+            android:id="@+id/linear_lobbyCurtain"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+         android:padding="15dp"
+            >
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/curtain"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Curtain"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/linear_lobbyLight"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+         android:padding="15dp"
+            >
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/light_bulb"
+
+
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Light"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kitchen_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@drawable/tool_gradiantback_color"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+
 
         <LinearLayout
             android:id="@+id/linear_air"
@@ -366,7 +759,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white"
-         />
+            />
 
 
         <LinearLayout
@@ -414,7 +807,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white"
-         />
+            />
 
         <LinearLayout
             android:id="@+id/linear_washingMachine"
@@ -423,7 +816,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-        android:padding="15dp"
+            android:padding="15dp"
 
             >
 
@@ -463,7 +856,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white"
-          />
+            />
 
         <LinearLayout
             android:id="@+id/linear_air_purifier"
@@ -509,7 +902,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white"
-       />
+            />
 
         <LinearLayout
             android:id="@+id/linear_vdpLock"
@@ -518,7 +911,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-         android:padding="15dp"
+            android:padding="15dp"
             >
 
 
@@ -555,7 +948,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white"
-          />
+            />
 
         <LinearLayout
             android:id="@+id/linear_dish_washer"
@@ -602,7 +995,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white"
-  />
+            />
 
         <LinearLayout
             android:id="@+id/linear_washTower"
@@ -611,7 +1004,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-       android:padding="15dp"
+            android:padding="15dp"
             >
 
 
@@ -649,7 +1042,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white"
-           />
+            />
 
         <LinearLayout
             android:id="@+id/linear_curtains"
@@ -658,7 +1051,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-         android:padding="15dp"
+            android:padding="15dp"
             >
 
 
@@ -705,7 +1098,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-         android:padding="15dp"
+            android:padding="15dp"
             >
 
 
@@ -744,588 +1137,54 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/ll_kitchen_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10"
-        android:background="@drawable/back_ground"
-        android:layout_marginHorizontal="10dp"
-        android:gravity="center"
-        android:padding="5dp"
-        android:visibility="gone"
-        android:scrollbars="none"
-        >
 
-
-
-        <LinearLayout
-
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/monitor"
-                android:padding="2dp"
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TV"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/air_conditioner"
-                android:padding="2dp"
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="AC"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-
-        <LinearLayout
-
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/refrigerator"
-                android:padding="2dp"
-
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Refrigerator"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/washing_machine"
-                android:padding="2dp"
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Washing Machine"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/air_purifier"
-                android:padding="2dp"
-
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Air purify"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/lock"
-                android:padding="2dp"
-
-
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="vdp lock"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/dishwasher"
-                android:padding="2dp"
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dish washer"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/wash_tower"
-                android:padding="2dp"
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Wash Tower"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/curtain"
-                android:padding="2dp"
-
-
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Curtains"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-
-        <LinearLayout
-
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/light_bulb"
-                android:padding="2dp"
-
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Light"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-
-
-    </LinearLayout>
     <LinearLayout
         android:id="@+id/ll_bedroom_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="10"
-        android:background="@drawable/back_ground"
+        android:background="@drawable/tool_gradiantback_color"
         android:layout_marginHorizontal="10dp"
         android:gravity="center"
-        android:padding="5dp"
         android:visibility="gone"
-
-
         >
 
 
 
         <LinearLayout
-
+            android:id="@+id/linear_bedroomAC"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:padding="15dp"
+
+
             >
 
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/monitor"
-                android:padding="2dp"
-                />
 
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TV"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/air_conditioner"
-                android:padding="2dp"
+
                 />
 
 
 
             <TextView
-                android:layout_width="match_parent"
+
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="AC"
                 android:gravity="center"
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 />
 
 
@@ -1341,301 +1200,300 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
+            android:background="@color/white"
+            />
 
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear_refrigerator"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="15dp"-->
+<!--            >-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/refrigerator"-->
+
+<!--                />-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Refrigerator"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+
+
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--            />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear_washingMachine"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="15dp"-->
+
+<!--            >-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/washing_machine"-->
+
+<!--                />-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Washing Machine"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+
+<!--                />-->
+
+
+
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--            />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear_air_purifier"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="15dp"-->
+<!--            >-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/air_purifier"-->
+<!--                />-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Air purify"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+
+
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--            />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear_vdpLock"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="15dp"-->
+<!--            >-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/lock"-->
+<!--                />-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="vdp lock"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+
+
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--            />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear_dish_washer"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="15dp"-->
+<!--            >-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/dishwasher"-->
+
+<!--                />-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Dish washer"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+
+
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--            />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linear_washTower"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="15dp"-->
+<!--            >-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/door"-->
+
+<!--                />-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Wash Tower"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+
+
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--            />-->
 
         <LinearLayout
-
+            android:id="@+id/linear_bedroomBlind"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/refrigerator"
-                android:padding="2dp"
-
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Refrigerator"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-           android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/washing_machine"
-                android:padding="2dp"
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Washing Machine"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/air_purifier"
-                android:padding="2dp"
-
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Air purify"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/lock"
-                android:padding="2dp"
-
-
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="vdp lock"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/dishwasher"
-                android:padding="2dp"
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dish washer"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/wash_tower"
-                android:padding="2dp"
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Wash Tower"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:padding="15dp"
             >
 
 
@@ -1643,9 +1501,6 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/curtain"
-                android:padding="2dp"
-
-
                 />
 
 
@@ -1653,12 +1508,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Curtains"
+                android:text="Blind"
                 android:gravity="center"
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 />
 
 
@@ -1674,18 +1529,18 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
+            android:background="@color/white"
+            />
 
 
         <LinearLayout
-
+            android:id="@+id/linear_bedroomLight"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:padding="15dp"
             >
 
 
@@ -1693,7 +1548,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/light_bulb"
-                android:padding="2dp"
+
 
                 />
 
@@ -1707,7 +1562,7 @@
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 />
 
 
@@ -1723,7 +1578,6 @@
 
 
     </LinearLayout>
-
 
 
 </LinearLayout>

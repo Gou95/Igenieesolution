@@ -76,9 +76,7 @@ public class Washing_Machine_Fragment extends Fragment {
     private void onAttachObservers() {
         washingViewModel.getLiveData().observe(getViewLifecycleOwner(), response -> {
             if (response != null && response.getStatus() != null && "OK".equals(response.getStatus().getFlagMessage())) {
-                Toast.makeText(getContext(), response.getStatus().getDeviceType(), Toast.LENGTH_SHORT).show();
-
-
+            //    Toast.makeText(getContext(), response.getStatus().getDeviceType(), Toast.LENGTH_SHORT).show();
                 List<WashingResponse.Response> responseList = response.getResponse();
                 if (responseList != null && !responseList.isEmpty()) {
                     WashingResponse.Response washingData = responseList.get(0);
@@ -101,19 +99,6 @@ public class Washing_Machine_Fragment extends Fragment {
 
                         String runState = washingData.getRunState().getCurrentState();
                         updateUIBasedOnState(runState);
-//                        String runState = washingData.getRunState().getCurrentState();
-//                        boolean runStateModeRun = "RUNNING".equalsIgnoreCase(runState);
-//                        boolean runStateModeRising = "RINSING".equalsIgnoreCase(runState);
-//                        boolean runStateModeSpining = "SPINNING".equalsIgnoreCase(runState);
-//
-//                        binding.linearCurrentState.setBackgroundColor(runStateModeRun ? Color.GREEN : Color.RED);
-//                        binding.txtPowerOnOff.setText(runStateModeRun ? "RUNNING" : "POWER_OFF");
-//
-//                        binding.linearCurrentState.setBackgroundColor(runStateModeRising ? Color.BLUE : Color.RED);
-//                        binding.txtPowerOnOff.setText(runStateModeRising ? "RINSING" : "POWER_OFF");
-//
-//                        binding.linearCurrentState.setBackgroundColor(runStateModeSpining ? Color.GRAY : Color.RED);
-//                        binding.txtPowerOnOff.setText(runStateModeSpining ? "SPINNING" : "POWER_OFF");
 
 
 
@@ -133,7 +118,7 @@ public class Washing_Machine_Fragment extends Fragment {
 
         washingViewModel.getIsFailed().observe(getViewLifecycleOwner(), error -> {
             if (error != null) {
-                Toast.makeText(getContext(), error, Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getContext(), error, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -183,7 +168,7 @@ public class Washing_Machine_Fragment extends Fragment {
             // Reset the animation state after the duration of the animation
             view.postDelayed(() -> {
                 isPowerOn = false;
-            }, 800); // 800ms for scale up + 800ms for scale down
+            }, 1600); // 800ms for scale up + 800ms for scale down
         }
     }
 

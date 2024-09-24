@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragment.Curtains_Fragment">
+    tools:context=".Fragment.Curtain_Lobby_Fragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -174,6 +174,4 @@
 
 
     </LinearLayout>
-
-
-</RelativeLayout>
+</FrameLayout>

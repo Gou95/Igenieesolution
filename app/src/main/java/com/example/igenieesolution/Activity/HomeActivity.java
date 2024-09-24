@@ -8,11 +8,17 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.example.igenieesolution.Fragment.AC_Bedroom_Fragment;
+import com.example.igenieesolution.Fragment.AC_Lobby_Fragment;
 import com.example.igenieesolution.Fragment.Air_Condition;
 import com.example.igenieesolution.Fragment.Air_Purify_Fragment;
+import com.example.igenieesolution.Fragment.BlindBedRoomFragment;
+import com.example.igenieesolution.Fragment.Curtain_Lobby_Fragment;
 import com.example.igenieesolution.Fragment.Curtains_Fragment;
 import com.example.igenieesolution.Fragment.Dish_Washer_Fragment;
+import com.example.igenieesolution.Fragment.Light_Bedroom_Fragment;
 import com.example.igenieesolution.Fragment.Light_Fragment;
+import com.example.igenieesolution.Fragment.Light_Lobby_Fragment;
 import com.example.igenieesolution.Fragment.RefrigeratorFragment;
 import com.example.igenieesolution.Fragment.TVFragment;
 import com.example.igenieesolution.Fragment.VDP_Lock_Fragment;
@@ -34,21 +40,26 @@ public class HomeActivity extends AppCompatActivity {
 
         setContentView(binding.getRoot());
 
+        setOnClickables();
 
 
 
+
+    }
+
+    private void setOnClickables() {
 
         binding.linearLowey.setOnClickListener(view -> {
-           setVisibleList(binding.llLobbyList);
-           handleToolClick(view,binding.linearKitchen,binding.linearBedroom);
+            setVisibleList(binding.llLobbyList);
+            handleToolClick(view,binding.linearKitchen,binding.linearBedroom);
 
         });
         binding.linearKitchen.setOnClickListener(view -> {
-           setVisibleList(binding.llKitchenList);
+            setVisibleList(binding.llKitchenList);
             handleToolClick(view,binding.linearLowey,binding.linearBedroom);
         });
         binding.linearBedroom.setOnClickListener(view -> {
-          setVisibleList(binding.llBedroomList);
+            setVisibleList(binding.llBedroomList);
             handleToolClick(view,binding.linearKitchen,binding.linearLowey);
         });
 
@@ -99,9 +110,32 @@ public class HomeActivity extends AppCompatActivity {
                     binding.linearAirPurifier,binding.linearCurtains,binding.linearDishWasher,binding.linearVdpLock, new Dish_Washer_Fragment());
         });
 
+        binding.linearBedroomBlind.setOnClickListener(view -> {
+            handleBedroomClick(view,binding.linearBedroomAC,binding.linearBedroomLight,new BlindBedRoomFragment());
+
+        });
+        binding.linearBedroomAC.setOnClickListener(view -> {
+            handleBedroomClick(view,binding.linearBedroomBlind,binding.linearBedroomLight,new AC_Bedroom_Fragment());
+
+        });
+        binding.linearBedroomLight.setOnClickListener(view -> {
+            handleBedroomClick(view,binding.linearBedroomAC,binding.linearBedroomBlind,new Light_Bedroom_Fragment());
+
+        });
+        binding.linearLobbyAC.setOnClickListener(view -> {
+            handleBedroomClick(view,binding.linearLobbyCurtain,binding.linearLobbyLight,new AC_Lobby_Fragment());
+
+        });
+        binding.linearLobbyCurtain.setOnClickListener(view -> {
+            handleBedroomClick(view,binding.linearLobbyAC,binding.linearLobbyLight,new Curtain_Lobby_Fragment());
+
+        });
+        binding.linearLobbyLight.setOnClickListener(view -> {
+            handleBedroomClick(view,binding.linearLobbyAC,binding.linearLobbyCurtain,new Light_Lobby_Fragment());
+
+        });
+
     }
-
-
 
 
     private void setVisibleList(View visibleList) {
@@ -143,6 +177,12 @@ public class HomeActivity extends AppCompatActivity {
         view1.setBackgroundResource(R.color.blue);
         view2.setBackgroundResource(R.color.blue);
 
+    }
+    private void handleBedroomClick(View view,View view1,View view2,Fragment fragment){
+        replaceFragment(fragment);
+        view.setBackgroundResource(R.color.green);
+        view1.setBackgroundResource(R.color.blue);
+        view2.setBackgroundResource(R.color.blue);
     }
 
 }
