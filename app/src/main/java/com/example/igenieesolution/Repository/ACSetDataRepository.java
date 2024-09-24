@@ -59,23 +59,7 @@ public class ACSetDataRepository {
     }
 
 
-    public MutableLiveData<SetACResponse> getUpdateTemperature(Context context,String id,String id1,SetClickListener listener){
-        Call<SetACResponse> call = apiInterface.getUpdateTempResponse(id, id1);
-        call.enqueue(new Callback<SetACResponse>() {
-            @Override
-            public void onResponse(Call<SetACResponse> call, Response<SetACResponse> response) {
-                if (response.isSuccessful() && response.body() != null) {
-                    listener.onSuccess(response.body());
-                }
-            }
 
-            @Override
-            public void onFailure(Call<SetACResponse> call, Throwable t) {
-              //  listener.onError("Something went wrong: " + t.getMessage());
-            }
-        });
-        return mutableLiveData;
-    }
 
 
 

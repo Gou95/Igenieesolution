@@ -10,9 +10,11 @@
     <color name="yellow">#FFCA28</color>
     <color name="light_blue">#80D8FF</color>
     <color name="red">#FF4C4C</color>
-    <color name="green">#008000</color>
+    <color name="green">#00712D</color>
     <color name="purple">#FF9900</color>
     <color name="blue">#1ca1ed</color>
+    <color name="light_red">#B30753</color>
+    <color name="light_yellow">#FFB22C</color>
 
 <!--    #BA68C8 purple-->
 </resources>

@@ -28,7 +28,7 @@ public class Light_Fragment extends Fragment {
     private boolean isPowerOn = false;
 
     LightViewModel viewModel;
-    GetLightViewModel getLightViewModel;
+
 
     private String light1 = "100"; // Store dimming value from SeekBar
     private String light2 = "100";
@@ -265,7 +265,7 @@ public class Light_Fragment extends Fragment {
                             viewModel.getLightDataDimming("4", dimmingValue1, colorValue1,"1");
 
                         }else {
-                            viewModel.getLightDataDimming("4","0",colorValue1,"1");
+                            viewModel.getLightDataDimming("4",dimmingValue1,colorValue1,"1");
 
                         }
 
@@ -276,7 +276,7 @@ public class Light_Fragment extends Fragment {
                             viewModel.getLightDataDimming("1",dimmingValue2,colorValue2,"1");
 
                         }else {
-                            viewModel.getLightDataDimming("1","0",colorValue2,"1");
+                            viewModel.getLightDataDimming("1",dimmingValue2,colorValue2,"1");
 
                         }
 

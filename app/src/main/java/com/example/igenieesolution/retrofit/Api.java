@@ -34,10 +34,6 @@ public interface Api {
     @POST("setData.php")
     Call<SetACResponse> getSetResponse(@Field("id") String id, @Field("id1") String id1);
 
-    @FormUrlEncoded
-    @POST("setData.php")
-    Call<SetACResponse> getUpdateTempResponse(@Field("id") String id, @Field("id1") String id1);
-
 
     @FormUrlEncoded
     @POST("postData.php")

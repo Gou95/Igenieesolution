@@ -82,7 +82,9 @@ public class Air_Condition extends Fragment {
         showLoader(true);
         acViewModel.getAcModelData(deviceIdAC);
         acSetDataViewModel.getAcModelData(deviceIdAC, jobMode);
-        acSetDataViewModel.getUpdateTemp(deviceIdAC,currentTargetTemperature);
+        acSetDataViewModel.getAcModelData(deviceIdAC, currentTargetTemperature);
+
+      //  acSetDataViewModel.getUpdateTemp(deviceIdAC,currentTargetTemperature);
     }
 
     private void initClicks() {
@@ -227,7 +229,8 @@ public class Air_Condition extends Fragment {
             currentTargetTemperature = increase;
            // binding.txtTimer.setText(String.format("%s°C", currentTargetTemperature));
             showLoader(true);
-            acSetDataViewModel.getUpdateTemp(deviceIdAC, currentTargetTemperature);
+            acSetDataViewModel.getAcModelData(deviceIdAC, currentTargetTemperature);
+          //  acSetDataViewModel.getUpdateTemp(deviceIdAC, currentTargetTemperature);
             Log.d("temp", "adjustTemperature: "+currentTargetTemperature);
         } else {
             Toast.makeText(getContext(), "Device ID not found", Toast.LENGTH_SHORT).show();

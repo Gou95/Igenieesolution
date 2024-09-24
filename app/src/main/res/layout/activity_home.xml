@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/purple"
+        android:background="@color/black"
 
         >
         <RelativeLayout
@@ -23,7 +23,7 @@
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:src="@drawable/i_geniee"
+                android:src="@drawable/i_black"
                 android:scaleType="fitXY"
                 android:layout_marginStart="20dp"
           android:layout_centerVertical="true"
@@ -37,6 +37,7 @@
                 android:scaleType="fitXY"
                 android:layout_marginEnd="60dp"
                 android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
                 android:padding="2dp"
                 />
 
@@ -74,7 +75,7 @@
             android:orientation="horizontal"
             android:weightSum="3"
             android:layout_marginTop="5dp"
-            android:background="@drawable/back_ground"
+            android:background="@drawable/tool_gradiantback_color"
             android:layout_marginHorizontal="5dp"
 
 
@@ -83,6 +84,7 @@
 
 
             <LinearLayout
+
                 android:id="@+id/linear_lowey"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -96,15 +98,17 @@
 
 
                 <ImageView
+                    android:id="@+id/img_lobby"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
-                    android:src="@drawable/living_room"
+                    android:src="@drawable/sofa"
 
                     />
 
 
 
                 <TextView
+                    android:id="@+id/txt_lobby"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Lobby"
@@ -112,7 +116,7 @@
                     android:textAllCaps="true"
                     android:textSize="14dp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/white"/>
 
 
 
@@ -128,7 +132,7 @@
 
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/black"/>
+                android:background="@color/white"/>
 
 
             <LinearLayout
@@ -141,6 +145,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/img_kitchen"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:src="@drawable/cutlery"
@@ -150,6 +155,7 @@
 
 
                 <TextView
+                    android:id="@+id/txt_kitchen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="kitchen"
@@ -157,7 +163,7 @@
                     android:textAllCaps="true"
                     android:textSize="14dp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/white"/>
 
 
 
@@ -170,7 +176,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/black"/>
+                android:background="@color/white"/>
 
 
             <LinearLayout
@@ -183,9 +189,10 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/img_bedroom"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
-                    android:src="@drawable/bed"
+                    android:src="@drawable/double_bed"
 
 
                     />
@@ -193,6 +200,7 @@
 
 
                 <TextView
+                    android:id="@+id/txt_bedroom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Bed Room"
@@ -200,7 +208,7 @@
                     android:textAllCaps="true"
                     android:textStyle="bold"
                     android:textSize="14dp"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/white"/>
 
 
 
@@ -226,7 +234,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/frame_layout"
-    android:layout_marginTop="10dp"
+    android:layout_marginTop="5dp"
 
     />
 
@@ -244,7 +252,7 @@
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:gravity="center"
-    android:background="@color/purple"
+    android:background="@color/black"
     android:orientation="vertical">
 
     <LinearLayout
@@ -253,92 +261,95 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="10"
-        android:background="@drawable/back_ground"
+        android:background="@drawable/tool_gradiantback_color"
         android:layout_marginHorizontal="10dp"
         android:gravity="center"
-        android:padding="5dp"
         android:scrollbars="none"
         android:visibility="gone"
         >
 
 
 
-        <LinearLayout
-                android:id="@+id/linear_tv"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginHorizontal="10dp"
-            >
+<!--        <LinearLayout-->
+<!--                android:id="@+id/linear_tv"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            >-->
 
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/monitor"
-                android:padding="2dp"
-                />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TV"
-                android:gravity="center"
-                android:textAllCaps="true"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/monitor"-->
+<!--                android:padding="2dp"-->
+<!--                />-->
 
 
 
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="TV"-->
+<!--                android:gravity="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/black"-->
+<!--                />-->
 
 
 
 
 
-        </LinearLayout>
 
 
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
+
+<!--        </LinearLayout>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/black"-->
+<!--            android:layout_marginStart="10dp"/>-->
 
         <LinearLayout
             android:id="@+id/linear_air"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:padding="15dp"
+
+
             >
 
 
             <ImageView
+                android:id="@+id/img_air"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/air_conditioner"
-                android:padding="2dp"
+
                 />
 
 
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/txt_air"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="AC"
                 android:gravity="center"
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 />
 
 
@@ -354,18 +365,18 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
+            android:background="@color/white"
+         />
 
 
         <LinearLayout
             android:id="@+id/linear_refrigerator"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-       android:layout_marginHorizontal="10dp"
+            android:padding="15dp"
             >
 
 
@@ -373,7 +384,6 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/refrigerator"
-                android:padding="2dp"
 
                 />
 
@@ -387,7 +397,7 @@
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 />
 
 
@@ -403,17 +413,17 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
+            android:background="@color/white"
+         />
 
         <LinearLayout
             android:id="@+id/linear_washingMachine"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginHorizontal="10dp"
+        android:padding="15dp"
 
             >
 
@@ -422,7 +432,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/washing_machine"
-                android:padding="2dp"
+
                 />
 
 
@@ -435,7 +445,7 @@
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
 
                 />
 
@@ -452,17 +462,17 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
+            android:background="@color/white"
+          />
 
         <LinearLayout
             android:id="@+id/linear_air_purifier"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:padding="15dp"
             >
 
 
@@ -470,8 +480,6 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/air_purifier"
-                android:padding="2dp"
-
                 />
 
 
@@ -484,7 +492,7 @@
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 />
 
 
@@ -500,17 +508,17 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
+            android:background="@color/white"
+       />
 
         <LinearLayout
             android:id="@+id/linear_vdpLock"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-     android:layout_marginHorizontal="10dp"
+         android:padding="15dp"
             >
 
 
@@ -518,9 +526,6 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/lock"
-                android:padding="2dp"
-
-
                 />
 
 
@@ -533,7 +538,7 @@
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 />
 
 
@@ -549,17 +554,17 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
+            android:background="@color/white"
+          />
 
         <LinearLayout
             android:id="@+id/linear_dish_washer"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:padding="15dp"
             >
 
 
@@ -567,7 +572,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/dishwasher"
-                android:padding="2dp"
+
                 />
 
 
@@ -580,7 +585,7 @@
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 />
 
 
@@ -596,24 +601,25 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
+            android:background="@color/white"
+  />
 
         <LinearLayout
+            android:id="@+id/linear_washTower"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginHorizontal="10dp"
+       android:padding="15dp"
             >
 
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/wash_tower"
-                android:padding="2dp"
+                android:src="@drawable/door"
+
                 />
 
 
@@ -626,7 +632,7 @@
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 />
 
 
@@ -642,17 +648,17 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
+            android:background="@color/white"
+           />
 
         <LinearLayout
             android:id="@+id/linear_curtains"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-         android:layout_marginHorizontal="10dp"
+         android:padding="15dp"
             >
 
 
@@ -660,9 +666,6 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/curtain"
-                android:padding="2dp"
-
-
                 />
 
 
@@ -670,12 +673,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Curtains"
+                android:text="Curtain"
                 android:gravity="center"
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 />
 
 
@@ -691,18 +694,18 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginStart="10dp"/>
+            android:background="@color/white"
+            />
 
 
         <LinearLayout
             android:id="@+id/linear_light"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginHorizontal="10dp"
+         android:padding="15dp"
             >
 
 
@@ -710,7 +713,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/light_bulb"
-                android:padding="2dp"
+
 
                 />
 
@@ -724,7 +727,7 @@
                 android:textAllCaps="true"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 />
 
 

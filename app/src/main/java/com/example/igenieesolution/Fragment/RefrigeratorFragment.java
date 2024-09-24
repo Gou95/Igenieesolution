@@ -40,7 +40,7 @@ public class RefrigeratorFragment extends Fragment {
     private String deviceId;
     private String tmpFreezer = ""; // Initialize with example values
     private String tmpFridge = "";
-    private String isExpressMode = "FALSE";
+    private String isExpressMode = "";
     private boolean isChecked = false;
 
     @Override
@@ -76,9 +76,11 @@ public class RefrigeratorFragment extends Fragment {
     private void fetchRefrigeratorData() {
         showLoader(true);
         refrigeratorViewModel.getRefrigeratorModelData(deviceId);
-        refrigeratorSetTempViewModel.updateFridgeTemperature(deviceId,tmpFridge);
-        refrigeratorSetTempViewModel.updateFreezerTemperature(deviceId,tmpFreezer);
+//        refrigeratorSetTempViewModel.updateFridgeTemperature(deviceId,tmpFridge);
+//        refrigeratorSetTempViewModel.updateFreezerTemperature(deviceId,tmpFreezer);
         refrigeratorSetTempViewModel.updateExpressMode(deviceId,isExpressMode);
+        refrigeratorSetTempViewModel.updateExpressMode(deviceId,tmpFridge);
+        refrigeratorSetTempViewModel.updateExpressMode(deviceId,tmpFreezer);
 
     }
 
@@ -88,7 +90,7 @@ public class RefrigeratorFragment extends Fragment {
     }
 
     private void setupOnClickListeners() {
-        binding.cardOnoff.setOnClickListener(view -> togglePowerState());
+      //  binding.cardOnoff.setOnClickListener(view -> togglePowerState());
         binding.cardArrowUp.setOnClickListener(view -> {
             adjustFridgeTemp("tmpFridgeInc");
             handleFridgeTemp();
@@ -141,7 +143,8 @@ public class RefrigeratorFragment extends Fragment {
                         tmpFridge = String.valueOf(temp.getTargetTemperature());
                         binding.txtFridge.setText(String.format("%s°C", tmpFridge));
                         AppSession.getInstance(getContext()).putString(Constants.FRIDGETEMP, tmpFridge);
-                    } else if ("FREEZER".equalsIgnoreCase(temp.getLocationName())) {
+                    }
+                    else if ("FREEZER".equalsIgnoreCase(temp.getLocationName())) {
                         tmpFreezer = String.valueOf(temp.getTargetTemperature());
                         binding.txtFreezer.setText(String.format("%s°C", tmpFreezer));
                         AppSession.getInstance(getContext()).putString(Constants.FREEZERTEMP, tmpFreezer);
@@ -186,7 +189,7 @@ private void handleFridgeTemp() {
         showToast("Device ID not found");
         return;
     }
-    refrigeratorSetTempViewModel.updateFridgeTemperature(deviceId, tmpFridge);
+    refrigeratorSetTempViewModel.updateExpressMode(deviceId, tmpFridge);
 }
 
     private void handleFreezerTemp() {
@@ -194,7 +197,7 @@ private void handleFridgeTemp() {
             showToast("Device ID not found");
             return;
         }
-        refrigeratorSetTempViewModel.updateFreezerTemperature(deviceId, tmpFreezer);
+        refrigeratorSetTempViewModel.updateExpressMode(deviceId, tmpFreezer);
     }
 
     private void adjustFridgeTemp(String command) {

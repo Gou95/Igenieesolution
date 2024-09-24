@@ -1,18 +1,13 @@
 package com.example.igenieesolution.Activity;
 
-import android.content.Intent;
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 
-import com.example.igenieesolution.Fragment.ACFragment;
 import com.example.igenieesolution.Fragment.Air_Condition;
 import com.example.igenieesolution.Fragment.Air_Purify_Fragment;
 import com.example.igenieesolution.Fragment.Curtains_Fragment;
@@ -29,6 +24,8 @@ public class HomeActivity extends AppCompatActivity {
 
     ActivityHomeBinding binding;
 
+    boolean isChecked = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,21 +37,72 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-        binding.linearLowey.setOnClickListener(view -> setVisibleList(binding.llLobbyList));
-        binding.linearKitchen.setOnClickListener(view -> setVisibleList(binding.llKitchenList));
-        binding.linearBedroom.setOnClickListener(view -> setVisibleList(binding.llBedroomList));
 
-        binding.linearAir.setOnClickListener(view -> replaceFragment(new Air_Condition()));
-        binding.linearRefrigerator.setOnClickListener(view -> replaceFragment(new RefrigeratorFragment()));
-        binding.linearLight.setOnClickListener(view -> replaceFragment(new Light_Fragment()));
-        binding.linearTv.setOnClickListener(view -> replaceFragment(new TVFragment()));
-        binding.linearVdpLock.setOnClickListener(view -> replaceFragment(new VDP_Lock_Fragment()));
-        binding.linearWashingMachine.setOnClickListener(view -> replaceFragment(new Washing_Machine_Fragment()));
-        binding.linearAirPurifier.setOnClickListener(view -> replaceFragment(new Air_Purify_Fragment()));
-        binding.linearCurtains.setOnClickListener(view -> replaceFragment(new Curtains_Fragment()));
-        binding.linearDishWasher.setOnClickListener(view -> replaceFragment(new Dish_Washer_Fragment()));
+        binding.linearLowey.setOnClickListener(view -> {
+           setVisibleList(binding.llLobbyList);
+           handleToolClick(view,binding.linearKitchen,binding.linearBedroom);
+
+        });
+        binding.linearKitchen.setOnClickListener(view -> {
+           setVisibleList(binding.llKitchenList);
+            handleToolClick(view,binding.linearLowey,binding.linearBedroom);
+        });
+        binding.linearBedroom.setOnClickListener(view -> {
+          setVisibleList(binding.llBedroomList);
+            handleToolClick(view,binding.linearKitchen,binding.linearLowey);
+        });
+
+
+        binding.linearAir.setOnClickListener(view -> {
+            handleClick(view, binding.linearRefrigerator, binding.linearWashingMachine, binding.linearLight, binding.linearVdpLock,
+                    binding.linearAirPurifier,binding.linearCurtains,binding.linearDishWasher,binding.linearWashTower, new Air_Condition());
+        });
+
+        binding.linearRefrigerator.setOnClickListener(view -> {
+            handleClick(view, binding.linearAir, binding.linearWashingMachine, binding.linearLight, binding.linearVdpLock,
+                    binding.linearAirPurifier,binding.linearCurtains,binding.linearDishWasher,binding.linearWashTower, new RefrigeratorFragment());
+        });
+
+        binding.linearWashingMachine.setOnClickListener(view -> {
+            handleClick(view, binding.linearRefrigerator, binding.linearAir, binding.linearLight, binding.linearVdpLock,
+                    binding.linearAirPurifier,binding.linearCurtains,binding.linearDishWasher,binding.linearWashTower, new Washing_Machine_Fragment());
+        });
+        binding.linearLight.setOnClickListener(view -> {
+            handleClick(view, binding.linearRefrigerator, binding.linearAir, binding.linearWashingMachine, binding.linearVdpLock,
+                    binding.linearAirPurifier,binding.linearCurtains,binding.linearDishWasher,binding.linearWashTower, new Light_Fragment());
+
+        });
+
+        binding.linearVdpLock.setOnClickListener(view -> {
+
+            handleClick(view, binding.linearRefrigerator, binding.linearAir, binding.linearWashingMachine, binding.linearLight,
+                    binding.linearAirPurifier,binding.linearCurtains,binding.linearDishWasher,binding.linearWashTower, new VDP_Lock_Fragment());
+        });
+
+        binding.linearAirPurifier.setOnClickListener(view -> {
+            handleClick(view, binding.linearRefrigerator, binding.linearAir, binding.linearWashingMachine, binding.linearLight,
+                    binding.linearVdpLock,binding.linearCurtains,binding.linearDishWasher,binding.linearWashTower, new Air_Purify_Fragment());
+
+        });
+        binding.linearCurtains.setOnClickListener(view -> {
+            handleClick(view, binding.linearRefrigerator, binding.linearAir, binding.linearWashingMachine, binding.linearLight,
+                    binding.linearAirPurifier,binding.linearVdpLock,binding.linearDishWasher,binding.linearWashTower, new Curtains_Fragment());
+
+        });
+        binding.linearDishWasher.setOnClickListener(view -> {
+            handleClick(view, binding.linearRefrigerator, binding.linearAir, binding.linearWashingMachine, binding.linearLight,
+                    binding.linearAirPurifier,binding.linearCurtains,binding.linearWashTower,binding.linearVdpLock, new Dish_Washer_Fragment());
+        });
+
+        binding.linearWashTower.setOnClickListener(view -> {
+            handleClick(view, binding.linearRefrigerator, binding.linearAir, binding.linearWashingMachine, binding.linearLight,
+                    binding.linearAirPurifier,binding.linearCurtains,binding.linearDishWasher,binding.linearVdpLock, new Dish_Washer_Fragment());
+        });
 
     }
+
+
+
 
     private void setVisibleList(View visibleList) {
         binding.llLobbyList.setVisibility(visibleList == binding.llLobbyList ? View.VISIBLE : View.GONE);
@@ -70,12 +118,31 @@ public class HomeActivity extends AppCompatActivity {
                     .commit();
         }
     }
-    private void changeColor(View view) {
-        view.setBackgroundColor(Color.GRAY); // Change the clicked layout color to grey
+
+
+
+    private void handleClick(View clickedView, View otherView1, View otherView2,View otherView3,View otherView4,View otherView5,
+                             View otherView6,View otherView7,View otherView8,Fragment fragment) {
+       // resetAllBackgroundColors();
+
+        clickedView.setBackgroundResource(R.color.green);
+        otherView1.setBackgroundResource(R.color.blue);
+        otherView2.setBackgroundResource(R.color.blue);
+        otherView3.setBackgroundResource(R.color.blue);
+        otherView4.setBackgroundResource(R.color.blue);
+        otherView5.setBackgroundResource(R.color.blue);
+        otherView6.setBackgroundResource(R.color.blue);
+        otherView7.setBackgroundResource(R.color.blue);
+        otherView8.setBackgroundResource(R.color.blue);
+
+        replaceFragment(fragment);
     }
 
-    private void resetColor(View view) {
-        view.setBackgroundColor(Color.TRANSPARENT); // Reset to default color
+    private void handleToolClick(View clickedView,View view1,View view2){
+        clickedView.setBackgroundResource(R.color.green);
+        view1.setBackgroundResource(R.color.blue);
+        view2.setBackgroundResource(R.color.blue);
+
     }
 
 }

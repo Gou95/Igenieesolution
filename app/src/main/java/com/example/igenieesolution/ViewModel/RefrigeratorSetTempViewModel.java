@@ -62,22 +62,22 @@ public class RefrigeratorSetTempViewModel extends ViewModel {
         }
     };
 
-    public void updateFreezerTemperature(String id, String id1) {
-        isConnecting.setValue(true);
-        if (repository == null) {
-            repository = SetRefrigeratorRepository.getInstance();
-        }
-       repository.getSetFreezer(context,id,id1,listener);
-    }
-
-    public void updateFridgeTemperature(String id, String id1) {
-        isConnecting.setValue(true);
-        if (repository == null) {
-            repository = SetRefrigeratorRepository.getInstance();
-        }
-        repository.getSetFridge(context,id,id1,listener);
-
-    }
+//    public void updateFreezerTemperature(String id, String id1) {
+//        isConnecting.setValue(true);
+//        if (repository == null) {
+//            repository = SetRefrigeratorRepository.getInstance();
+//        }
+//       repository.getSetFreezer(context,id,id1,listener);
+//    }
+//
+//    public void updateFridgeTemperature(String id, String id1) {
+//        isConnecting.setValue(true);
+//        if (repository == null) {
+//            repository = SetRefrigeratorRepository.getInstance();
+//        }
+//        repository.getSetFridge(context,id,id1,listener);
+//
+//    }
 
 
     public void updateExpressMode(String id, String id1) {

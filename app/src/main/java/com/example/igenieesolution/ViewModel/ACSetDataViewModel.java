@@ -72,11 +72,7 @@ public class ACSetDataViewModel extends ViewModel {
 
     }
 
-    public void getUpdateTemp(String id,String id1){
-        isConnecting.setValue(true);
-        repository = ACSetDataRepository.getInstance();
-        repository.getUpdateTemperature(context,id,id1,listener);
-    }
+
 
 
 }
