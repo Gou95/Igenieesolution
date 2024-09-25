@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="2dp"
             android:layout_marginBottom="10dp"
             app:cardElevation="11dp"
             android:backgroundTint="@color/black"
@@ -365,14 +365,16 @@
                                                 android:layout_height="wrap_content"
                                                 android:gravity="center"
                                                 android:text="Door State"
+                                                android:textStyle="bold"
                                                 android:textColor="@color/white"
                                                 android:textSize="13dp" />
 
                                             <TextView
                                                 android:id="@+id/txt_doorMain"
-                                                android:layout_width="match_parent"
+                                                android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:gravity="center"
+                                                android:textStyle="bold"
                                                 android:text="Close (Main)"
                                                 android:textColor="@color/white"
                                                 android:textSize="13dp" />
@@ -405,6 +407,7 @@
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:gravity="center"
+                                                android:textStyle="bold"
                                                 android:text="Fresh Air Filter "
                                                 android:textColor="@color/white"
                                                 android:textSize="13dp" />
@@ -414,6 +417,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:gravity="center"
+                                                android:textStyle="bold"
                                                 android:text=" Auto"
                                                 android:textColor="@color/white"
                                                 android:textSize="13dp" />
@@ -446,16 +450,18 @@
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:gravity="center"
+                                                android:layout_gravity="center"
                                                 android:text="Express Mode"
+                                                android:textStyle="bold"
                                                 android:textColor="@color/white"
                                                 android:textSize="13dp" />
 
                                             <TextView
                                                 android:id="@+id/txt_mode"
-                                                android:layout_width="match_parent"
+                                                android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:gravity="center"
+                                                android:layout_gravity="center"
+                                                android:textStyle="bold"
                                                 android:textColor="@color/white"
                                                 android:textSize="13dp" />
 
