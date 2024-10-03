@@ -28,6 +28,7 @@ public class Air_Purify_Fragment extends Fragment {
     FragmentAirPurifyBinding binding;
     AirPurifierViewModel airPurifierViewModel;
      String deviceId = "dd29d92cfe396bf498296647e0279f9ded76414a3dd9b3445ce18b0e29c58ee2";
+
      boolean isPowerOn = false;
 
      String str_jobMode;

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">I Geniee Solution</string>
     <string name="rtspUrl">rtsp://user:123456@192.168.10.110:8554/ch01</string>
+    <string name="deviceId">dd29d92cfe396bf498296647e0279f9ded76414a3dd9b3445ce18b0e29c58ee2</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

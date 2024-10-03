@@ -104,6 +104,7 @@
                                     android:textSize="14dp"
                                     android:textColor="@color/white"
                                     android:gravity="center"
+                                    android:textStyle="bold"
                                     android:layout_marginTop="5dp"/>
 
 
@@ -136,6 +137,7 @@
                                     android:textSize="14dp"
                                     android:textColor="@color/white"
                                     android:gravity="center"
+                                    android:textStyle="bold"
                                     android:layout_marginTop="5dp"/>
 
 
@@ -683,14 +685,14 @@
 
 
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Target Temperature"
-                                            android:textStyle="bold"
-                                            android:textSize="18dp"
-                                            android:layout_marginTop="10dp"
-                                            android:textColor="@color/white"/>
+<!--                                        <TextView-->
+<!--                                            android:layout_width="wrap_content"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:text="Target Temperature"-->
+<!--                                            android:textStyle="bold"-->
+<!--                                            android:textSize="18dp"-->
+<!--                                            android:layout_marginTop="10dp"-->
+<!--                                            android:textColor="@color/white"/>-->
                                     </LinearLayout>
 
 
@@ -734,6 +736,7 @@
                                                 android:textSize="14dp"
                                                 android:textColor="@color/white"
                                                 android:gravity="center"
+                                                android:textStyle="bold"
                                                 android:layout_marginTop="5dp"/>
 
 
@@ -767,6 +770,7 @@
                                                 android:textSize="14dp"
                                                 android:textColor="@color/white"
                                                 android:gravity="center"
+                                                android:textStyle="bold"
                                                 android:layout_marginTop="5dp"/>
 
 
@@ -799,8 +803,8 @@
                                                 android:id="@+id/txt_windStrength"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:text="Low"
                                                 android:textSize="14dp"
+                                                android:textStyle="bold"
                                                 android:textColor="@color/white"
                                                 android:gravity="center"/>
 
@@ -845,6 +849,7 @@
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:text="OFF"
+                                                android:textStyle="bold"
                                                 android:textSize="14dp"
                                                 android:textColor="@color/white"
                                                 android:gravity="center"/>
@@ -1028,7 +1033,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:textSize="14dp"
-                android:text="oder :"
+                android:text="Oder :"
                 />
 
 

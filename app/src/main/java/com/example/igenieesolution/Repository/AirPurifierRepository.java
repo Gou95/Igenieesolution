@@ -43,16 +43,15 @@ public class AirPurifierRepository {
             @Override
             public void onResponse(Call<AirPurifierResponse> call, Response<AirPurifierResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
-
                     listener.onSuccess(response.body());
-                    // Set value to LiveData
+
                 }
             }
 
             @Override
             public void onFailure(Call<AirPurifierResponse> call, Throwable t) {
 
-                 listener.onError("Something went wrong: " + t.getMessage());
+                // listener.onError("Something went wrong: " + t.getMessage());
             }
         });
 
@@ -66,14 +65,14 @@ public class AirPurifierRepository {
             public void onResponse(Call<AirPurifierResponse> call, Response<AirPurifierResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     listener.onSuccess(response.body());
-                    // Set value to LiveData
+
                 }
             }
 
             @Override
             public void onFailure(Call<AirPurifierResponse> call, Throwable t) {
 
-                listener.onError("Something went wrong: " + t.getMessage());
+               // listener.onError("Something went wrong: " + t.getMessage());
             }
         });
 
