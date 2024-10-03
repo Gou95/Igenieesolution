@@ -252,6 +252,7 @@
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:gravity="center"
+    android:layout_marginTop="10dp"
     android:background="@color/black"
     android:orientation="vertical">
 

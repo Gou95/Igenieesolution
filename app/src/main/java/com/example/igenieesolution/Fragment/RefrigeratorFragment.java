@@ -90,7 +90,7 @@ public class RefrigeratorFragment extends Fragment {
     }
 
     private void setupOnClickListeners() {
-      //  binding.cardOnoff.setOnClickListener(view -> togglePowerState());
+        binding.cardOnoff.setOnClickListener(view -> togglePowerState());
         binding.cardArrowUp.setOnClickListener(view -> {
             adjustFridgeTemp("tmpFridgeInc");
             handleFridgeTemp();
@@ -181,6 +181,8 @@ public class RefrigeratorFragment extends Fragment {
 
             binding.cardOnoff.setCardBackgroundColor(expressMode ? Color.GREEN : Color.RED);
             binding.imgDoor.setImageResource(expressMode ? R.drawable.open_ref : R.drawable.fridge);
+            binding.imgExpressMode.setImageResource(expressMode ? R.drawable.snow_flakeon : R.drawable.snow_flakeoff);
+            binding.txtDoorMain.setText(expressMode ? "Open (Main)" : "Close (Main)");
             binding.txtMode.setText(expressMode ? "ON" : "OFF" );
 
 //          for (SetRefrigeratorResponse.Doorstatus doorstatus : response.getDoorStatus()){
@@ -247,7 +249,9 @@ private void handleFridgeTemp() {
         Log.d("RefrigeratorFragment", "Toggling power state. New express mode: " + isExpressMode);
 
         binding.cardOnoff.setCardBackgroundColor("TRUE".equalsIgnoreCase(isExpressMode) ? Color.GREEN : Color.RED);
-        binding.imgDoor.setImageResource("TRUE".equalsIgnoreCase(isExpressMode) ? R.drawable.open_ref : R.drawable.door);
+        binding.imgDoor.setImageResource("TRUE".equalsIgnoreCase(isExpressMode) ? R.drawable.open_ref : R.drawable.fridge);
+        binding.imgExpressMode.setImageResource("TRUE".equalsIgnoreCase(isExpressMode) ? R.drawable.snow_flakeon :R.drawable.snow_flakeoff);
+        binding.txtDoorMain.setText("TRUE".equalsIgnoreCase(isExpressMode) ? "Open (Main)" : "Close (Main)");
 
         refrigeratorSetTempViewModel.updateExpressMode(deviceId, isExpressMode);
 

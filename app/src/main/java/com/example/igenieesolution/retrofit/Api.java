@@ -5,6 +5,7 @@ package com.example.igenieesolution.retrofit;
 
 import com.example.igenieesolution.Body.AcBody;
 import com.example.igenieesolution.Response.AcResponse;
+import com.example.igenieesolution.Response.AirPurifierResponse;
 import com.example.igenieesolution.Response.GetLightResponse;
 import com.example.igenieesolution.Response.LightResponse;
 import com.example.igenieesolution.Response.LockResponse;
@@ -76,6 +77,14 @@ public interface Api {
     @FormUrlEncoded
     @POST("setData.php")
     Call<WashingResponse> getSetWashingResponse(@Field("id") String id,@Field("id") String id1);
+
+    @FormUrlEncoded
+    @POST("postData.php")
+    Call<AirPurifierResponse> getAirPurifierRes(@Field("id")String id);
+
+    @FormUrlEncoded
+    @POST("setData.php")
+    Call<AirPurifierResponse> setAirPurifierRes(@Field("id")String id,@Field("id1") String id1);
 
 
 }

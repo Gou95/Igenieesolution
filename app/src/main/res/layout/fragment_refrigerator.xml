@@ -19,7 +19,6 @@
             android:layout_height="match_parent"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="2dp"
-            android:layout_marginBottom="10dp"
             app:cardElevation="11dp"
             android:backgroundTint="@color/black"
             app:cardCornerRadius="10dp">
@@ -335,7 +334,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:layout_alignParentEnd="true"
-                                    android:layout_marginEnd="100dp"
+                                    android:layout_marginEnd="80dp"
                                     android:gravity="center"
                                     android:orientation="horizontal">
 
@@ -365,9 +364,8 @@
                                                 android:layout_height="wrap_content"
                                                 android:gravity="center"
                                                 android:text="Door State"
-                                                android:textStyle="bold"
                                                 android:textColor="@color/white"
-                                                android:textSize="13dp" />
+                                                android:textSize="14dp" />
 
                                             <TextView
                                                 android:id="@+id/txt_doorMain"
@@ -375,9 +373,8 @@
                                                 android:layout_height="wrap_content"
                                                 android:gravity="center"
                                                 android:textStyle="bold"
-                                                android:text="Close (Main)"
                                                 android:textColor="@color/white"
-                                                android:textSize="13dp" />
+                                                android:textSize="15dp" />
 
 
                                         </LinearLayout>
@@ -407,10 +404,9 @@
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:gravity="center"
-                                                android:textStyle="bold"
                                                 android:text="Fresh Air Filter "
                                                 android:textColor="@color/white"
-                                                android:textSize="13dp" />
+                                                android:textSize="14dp" />
 
                                             <TextView
                                                 android:id="@+id/txt_auto"
@@ -420,7 +416,7 @@
                                                 android:textStyle="bold"
                                                 android:text=" Auto"
                                                 android:textColor="@color/white"
-                                                android:textSize="13dp" />
+                                                android:textSize="15dp" />
 
                                         </LinearLayout>
 
@@ -432,15 +428,16 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_centerInParent="true"
-                                        android:layout_marginStart="30dp"
+                                        android:layout_marginStart="50dp"
                                         android:gravity="center"
                                         android:orientation="vertical">
 
 
                                         <ImageView
+                                            android:id="@+id/img_expressMode"
                                             android:layout_width="100dp"
                                             android:layout_height="100dp"
-                                            android:src="@drawable/air_filter" />
+                                            android:src="@drawable/snow_flakeoff" />
 
                                         <LinearLayout
                                             android:layout_width="wrap_content"
@@ -452,9 +449,8 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="center"
                                                 android:text="Express Mode"
-                                                android:textStyle="bold"
                                                 android:textColor="@color/white"
-                                                android:textSize="13dp" />
+                                                android:textSize="14dp" />
 
                                             <TextView
                                                 android:id="@+id/txt_mode"
@@ -463,7 +459,7 @@
                                                 android:layout_gravity="center"
                                                 android:textStyle="bold"
                                                 android:textColor="@color/white"
-                                                android:textSize="13dp" />
+                                                android:textSize="15dp" />
 
                                         </LinearLayout>
 

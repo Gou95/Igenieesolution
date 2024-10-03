@@ -20,7 +20,7 @@
             app:cardCornerRadius="10dp"
             app:cardElevation="11dp"
             android:backgroundTint="@color/black"
-            android:layout_marginBottom="10dp"
+
             >
 
 
@@ -51,336 +51,363 @@
 
 
                     <LinearLayout
-                        android:layout_centerInParent="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
                         android:background="@drawable/washing_back"
-                        android:orientation="horizontal"
-                        android:layout_marginHorizontal="10dp">
+                        >
 
-                        <LinearLayout
-                            android:id="@+id/linear_clean"
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                            android:padding="10dp"
-                            >
-
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/cleaning"
-                            />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Clean"
-                                android:textSize="14dp"
-                                android:textColor="@color/white"
-                                android:gravity="center"
-                                android:layout_marginTop="5dp"/>
-
-
-
-
-
-                        </LinearLayout>
+                            android:text="Mode"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dp"
+                            android:textSize="14dp"/>
 
 
                         <LinearLayout
-                            android:id="@+id/linear_sleep"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                            android:padding="10dp">
-
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/night"
-                                />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Sleep"
-                                android:textSize="14dp"
-                                android:textColor="@color/white"
-                                android:gravity="center"
-                                android:layout_marginTop="5dp"/>
-
-
-
-
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:id="@+id/linear_slient"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                            android:padding="10dp"
-                            >
-
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/mute"
-                                />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Slient"
-                                android:textSize="14dp"
-                                android:layout_marginTop="5dp"
-                                android:textColor="@color/white"
-                                android:gravity="center"/>
-
-
-
-
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:id="@+id/linear_humidity"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                            android:padding="10dp"
-                            >
-
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/humidity"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Humidity"
-                                android:textSize="14dp"
-                                android:layout_marginTop="5dp"
-                                android:textColor="@color/white"
-                                android:gravity="center"/>
-
-
-
-
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:id="@+id/linear_circulator"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                            android:padding="10dp">
-
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/air_circle"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Circulator"
-                                android:textSize="14dp"
-                                android:layout_marginTop="5dp"
-                                android:textColor="@color/white"
-                                android:gravity="center"/>
-
-
-
-
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:id="@+id/linear_baby_care"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                            android:padding="10dp"
-                          >
-
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/baby"
-                                android:layout_gravity="center"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Baby Care"
-                                android:textSize="14dp"
-                                android:textColor="@color/white"
-                                android:layout_marginTop="5dp"
-                              />
-
-
-
-
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:id="@+id/linear_dual_clean"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                            android:padding="10dp"
-
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp"
                         >
 
 
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/air_filter"
-                                android:layout_gravity="center"
-                                />
 
-                            <TextView
+
+
+                            <LinearLayout
+                                android:id="@+id/linear_clean"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Dual Clean"
-                                android:textSize="14dp"
-                                android:layout_marginTop="5dp"
-                                android:textColor="@color/white"
-                                android:gravity="center"/>
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="20dp"
+                                android:padding="10dp"
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/cleanone"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Clean"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:layout_marginTop="5dp"/>
 
 
 
 
 
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/linear_audio"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                            android:padding="10dp"
-                        >
+                            </LinearLayout>
 
 
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/a_letter"
-                                />
-
-                            <TextView
-                                android:layout_width="match_parent"
+                            <LinearLayout
+                                android:id="@+id/linear_sleep"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Audio"
-                                android:textSize="14dp"
-                                android:layout_marginTop="5dp"
-                                android:textColor="@color/white"
-                                android:gravity="center"/>
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="20dp"
+                                android:padding="10dp">
+
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/night"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sleep"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:layout_marginTop="5dp"/>
+
+
+
+
+
+                            </LinearLayout>
+                            <!--                        <LinearLayout-->
+                            <!--                            android:id="@+id/linear_slient"-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:orientation="vertical"-->
+                            <!--                            android:layout_gravity="center"-->
+                            <!--                            android:layout_marginStart="20dp"-->
+                            <!--                            android:padding="10dp"-->
+                            <!--                            >-->
+
+
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="50dp"-->
+                            <!--                                android:layout_height="50dp"-->
+                            <!--                                android:src="@drawable/mute"-->
+                            <!--                                />-->
+
+                            <!--                            <TextView-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:text="Slient"-->
+                            <!--                                android:textSize="14dp"-->
+                            <!--                                android:layout_marginTop="5dp"-->
+                            <!--                                android:textColor="@color/white"-->
+                            <!--                                android:gravity="center"/>-->
+
+
+
+
+
+                            <!--                        </LinearLayout>-->
+
+
+                            <!--                        <LinearLayout-->
+                            <!--                            android:id="@+id/linear_humidity"-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:orientation="vertical"-->
+                            <!--                            android:layout_gravity="center"-->
+                            <!--                            android:layout_marginStart="20dp"-->
+                            <!--                            android:padding="10dp"-->
+                            <!--                            >-->
+
+
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="50dp"-->
+                            <!--                                android:layout_height="50dp"-->
+                            <!--                                android:src="@drawable/humidity"-->
+                            <!--                                />-->
+
+                            <!--                            <TextView-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:text="Humidity"-->
+                            <!--                                android:textSize="14dp"-->
+                            <!--                                android:layout_marginTop="5dp"-->
+                            <!--                                android:textColor="@color/white"-->
+                            <!--                                android:gravity="center"/>-->
+
+
+
+
+
+                            <!--                        </LinearLayout>-->
+                            <!--                        <LinearLayout-->
+                            <!--                            android:id="@+id/linear_circulator"-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:orientation="vertical"-->
+                            <!--                            android:layout_gravity="center"-->
+                            <!--                            android:layout_marginStart="20dp"-->
+                            <!--                            android:padding="10dp">-->
+
+
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="50dp"-->
+                            <!--                                android:layout_height="50dp"-->
+                            <!--                                android:src="@drawable/air_circle"-->
+                            <!--                                />-->
+
+                            <!--                            <TextView-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:text="Circulator"-->
+                            <!--                                android:textSize="14dp"-->
+                            <!--                                android:layout_marginTop="5dp"-->
+                            <!--                                android:textColor="@color/white"-->
+                            <!--                                android:gravity="center"/>-->
+
+
+
+
+
+                            <!--                        </LinearLayout>-->
+                            <!--                        <LinearLayout-->
+                            <!--                            android:id="@+id/linear_baby_care"-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:orientation="vertical"-->
+                            <!--                            android:layout_gravity="center"-->
+                            <!--                            android:layout_marginStart="20dp"-->
+                            <!--                            android:padding="10dp"-->
+                            <!--                          >-->
+
+
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="50dp"-->
+                            <!--                                android:layout_height="50dp"-->
+                            <!--                                android:src="@drawable/baby"-->
+                            <!--                                android:layout_gravity="center"-->
+                            <!--                                />-->
+
+                            <!--                            <TextView-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:text="Baby Care"-->
+                            <!--                                android:textSize="14dp"-->
+                            <!--                                android:textColor="@color/white"-->
+                            <!--                                android:layout_marginTop="5dp"-->
+                            <!--                              />-->
+
+
+
+
+
+                            <!--                        </LinearLayout>-->
+                            <!--                        <LinearLayout-->
+                            <!--                            android:id="@+id/linear_dual_clean"-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:orientation="vertical"-->
+                            <!--                            android:layout_gravity="center"-->
+                            <!--                            android:layout_marginStart="20dp"-->
+                            <!--                            android:padding="10dp"-->
+
+                            <!--                        >-->
+
+
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="50dp"-->
+                            <!--                                android:layout_height="50dp"-->
+                            <!--                                android:src="@drawable/air_filter"-->
+                            <!--                                android:layout_gravity="center"-->
+                            <!--                                />-->
+
+                            <!--                            <TextView-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:text="Dual Clean"-->
+                            <!--                                android:textSize="14dp"-->
+                            <!--                                android:layout_marginTop="5dp"-->
+                            <!--                                android:textColor="@color/white"-->
+                            <!--                                android:gravity="center"/>-->
+
+
+
+
+
+                            <!--                        </LinearLayout>-->
+
+                            <!--                        <LinearLayout-->
+                            <!--                            android:id="@+id/linear_audio"-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:orientation="vertical"-->
+                            <!--                            android:layout_gravity="center"-->
+                            <!--                            android:layout_marginStart="20dp"-->
+                            <!--                            android:padding="10dp"-->
+                            <!--                        >-->
+
+
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="50dp"-->
+                            <!--                                android:layout_height="50dp"-->
+                            <!--                                android:src="@drawable/a_letter"-->
+                            <!--                                />-->
+
+                            <!--                            <TextView-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:text="Audio"-->
+                            <!--                                android:textSize="14dp"-->
+                            <!--                                android:layout_marginTop="5dp"-->
+                            <!--                                android:textColor="@color/white"-->
+                            <!--                                android:gravity="center"/>-->
+
+
+
+
+
+                            <!--                        </LinearLayout>-->
+                            <!--                        <LinearLayout-->
+                            <!--                            android:id="@+id/linear_smart"-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:orientation="vertical"-->
+                            <!--                            android:layout_gravity="center"-->
+                            <!--                            android:layout_marginStart="20dp"-->
+                            <!--                           android:padding="10dp">-->
+
+
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="50dp"-->
+                            <!--                                android:layout_height="50dp"-->
+                            <!--                                android:src="@drawable/air_filter1"-->
+                            <!--                                />-->
+
+                            <!--                            <TextView-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:text="Smart"-->
+                            <!--                                android:textSize="14dp"-->
+                            <!--                                android:layout_marginTop="5dp"-->
+                            <!--                                android:textColor="@color/white"-->
+                            <!--                                android:gravity="center"/>-->
+
+
+
+
+
+                            <!--                        </LinearLayout>-->
+
+                            <!--                        <LinearLayout-->
+                            <!--                            android:id="@+id/linear_fast"-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:orientation="vertical"-->
+                            <!--                            android:layout_gravity="center"-->
+                            <!--                            android:layout_marginStart="20dp"-->
+                            <!--                            android:layout_marginEnd="10dp"-->
+                            <!--                            android:padding="10dp">-->
+
+
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="50dp"-->
+                            <!--                                android:layout_height="50dp"-->
+                            <!--                                android:src="@drawable/circle"-->
+                            <!--                                />-->
+
+                            <!--                            <TextView-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:text="Fast"-->
+                            <!--                                android:textSize="14dp"-->
+                            <!--                                android:textColor="@color/white"-->
+                            <!--                                android:gravity="center"/>-->
+
+
+
+
+
+                            <!--                        </LinearLayout>-->
+
+
 
 
 
 
 
                         </LinearLayout>
-                        <LinearLayout
-                            android:id="@+id/linear_smart"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                           android:padding="10dp">
-
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/air_filter1"
-                                />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Smart"
-                                android:textSize="14dp"
-                                android:layout_marginTop="5dp"
-                                android:textColor="@color/white"
-                                android:gravity="center"/>
-
-
-
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/linear_fast"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="10dp"
-                            android:padding="10dp">
-
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/circle"
-                                />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Fast"
-                                android:textSize="14dp"
-                                android:textColor="@color/white"
-                                android:gravity="center"/>
-
-
-
-
-
-                        </LinearLayout>
-
-
-
-
-
-
 
                     </LinearLayout>
+
+
+
 
 
 
@@ -411,20 +438,32 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+
                         >
 
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="250dp"
                             android:orientation="vertical"
                             android:layout_centerVertical="true"
+                            android:background="@drawable/washing_back"
+                            android:padding="10dp"
 
                             >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wind Speed"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:textSize="15dp"/>
 
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
                                 android:orientation="horizontal">
 
 
@@ -566,7 +605,7 @@
 
 
                              <LinearLayout
-                                 android:id="@+id/linear_audio2"
+                                 android:id="@+id/linear_auto"
                                  android:layout_width="100dp"
                                  android:layout_height="45dp"
                                  android:background="@drawable/card_gradiantback_color"
@@ -584,7 +623,7 @@
                                  <TextView
                                      android:layout_width="wrap_content"
                                      android:layout_height="wrap_content"
-                                     android:text="Audio"
+                                     android:text="Auto"
                                      android:textColor="@color/white"
                                      android:textSize="14dp"
                                      android:layout_marginLeft="5dp"
@@ -600,10 +639,11 @@
                         </LinearLayout>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="750dp"
+                            android:layout_width="730dp"
                             android:layout_height="250dp"
                             android:layout_centerInParent="true"
                             app:cardCornerRadius="10dp"
+                            android:layout_marginStart="10dp"
                             app:cardElevation="11dp">
 
                             <LinearLayout
@@ -670,35 +710,71 @@
                                         android:orientation="horizontal">
 
                                         <LinearLayout
-                                            android:id="@+id/linear_air_dry"
+                                            android:id="@+id/linear_clean1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:orientation="vertical"
-                                            android:gravity="center"
-                                            android:layout_marginStart="15dp"
-                                            android:layout_marginTop="10dp"
-                                            android:layout_marginBottom="10dp">
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="20dp"
+                                            android:padding="10dp"
+                                            android:visibility="gone"
+                                            >
 
 
                                             <ImageView
                                                 android:layout_width="40dp"
                                                 android:layout_height="40dp"
-                                                android:src="@drawable/almond"
+                                                android:src="@drawable/cleanone"
                                                 />
 
                                             <TextView
-                                                android:layout_width="wrap_content"
+                                                android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:text="Air_Dry"
+                                                android:text="Clean"
                                                 android:textSize="14dp"
                                                 android:textColor="@color/white"
-                                                android:gravity="center"/>
+                                                android:gravity="center"
+                                                android:layout_marginTop="5dp"/>
 
 
 
 
 
                                         </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:id="@+id/linear_sleep1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="20dp"
+                                            android:visibility="gone"
+                                            android:padding="10dp">
+
+
+                                            <ImageView
+                                                android:layout_width="40dp"
+                                                android:layout_height="40dp"
+                                                android:src="@drawable/night"
+                                                />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Sleep"
+                                                android:textSize="14dp"
+                                                android:textColor="@color/white"
+                                                android:gravity="center"
+                                                android:layout_marginTop="5dp"/>
+
+
+
+
+
+                                        </LinearLayout>
+
 
 
                                         <LinearLayout
@@ -720,6 +796,7 @@
                                                 />
 
                                             <TextView
+                                                android:id="@+id/txt_windStrength"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:text="Low"
@@ -733,7 +810,7 @@
 
                                         </LinearLayout>
                                         <LinearLayout
-                                            android:id="@+id/linear_off"
+
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:orientation="vertical"
@@ -745,10 +822,11 @@
 
 
                                             <androidx.cardview.widget.CardView
+                                                android:id="@+id/card_onOff"
                                                 android:layout_width="40dp"
                                                 android:layout_height="40dp"
                                                 app:cardCornerRadius="20dp"
-                                                android:backgroundTint="@color/red"
+
 
                                                 >
                                                 <ImageView
@@ -763,6 +841,7 @@
                                             </androidx.cardview.widget.CardView>
 
                                             <TextView
+                                                android:id="@+id/txt_onOff"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:text="OFF"
@@ -804,170 +883,295 @@
 
 
 
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:orientation="horizontal"
-                                            android:layout_marginHorizontal="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3">
 
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:textColor="@color/white"
-                                                android:textSize="15dp"
-                                                android:text="PM1 :"
-                                                />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
 
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
 
-                                            <TextView
-                                                android:id="@+id/txt_pm1"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:textColor="@color/white"
-                                                android:textSize="15dp"
-                                                android:text="00"
-                                                android:layout_marginLeft="10dp"/>
-
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginHorizontal="10dp"
-                                            android:orientation="horizontal">
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:textColor="@color/white"
-                                                android:textSize="15dp"
-                                                android:text="PM2 :"
-                                                />
-
-
-                                            <TextView
-                                                android:id="@+id/txt_pm2"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="match_parent"
-                                                android:layout_marginLeft="10dp"
-                                                android:text="00"
-                                                android:textColor="@color/white"
-                                                android:textSize="15dp" />
-
-
-                                        </LinearLayout>
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginHorizontal="10dp"
-                                            android:orientation="horizontal">
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:textColor="@color/white"
-                                                android:textSize="15dp"
-                                                android:text="PM10 :"
-                                                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="PM1 :"
+                />
 
 
 
-                                            <TextView
-                                                android:id="@+id/txt_pm10"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:textColor="@color/white"
-                                                android:textSize="15dp"
-                                                android:text="00"
-                                                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/txt_pm1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="00"
+                android:layout_marginLeft="10dp"/>
 
 
-                                        </LinearLayout>
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginHorizontal="10dp"
-                                            android:orientation="horizontal"
-                                            android:layout_marginBottom="10dp">
+        </LinearLayout>
 
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:textColor="@color/white"
-                                                android:textSize="15dp"
-                                                android:text="Total Pollution :"
-                                                />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal">
 
-
-
-                                            <TextView
-                                                android:id="@+id/txt_total_population"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:textColor="@color/white"
-                                                android:textSize="15dp"
-                                                android:text="00"
-                                                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="PM2 :"
+                />
 
 
-
-                                        </LinearLayout>
-<!--                                        <LinearLayout-->
-<!--                                            android:layout_width="match_parent"-->
-<!--                                            android:layout_height="wrap_content"-->
-<!--                                            android:layout_marginHorizontal="10dp"-->
-<!--                                            android:orientation="horizontal">-->
-
-<!--                                            <TextView-->
-<!--                                                android:layout_width="wrap_content"-->
-<!--                                                android:layout_height="wrap_content"-->
-<!--                                                android:textColor="@color/white"-->
-<!--                                                android:textSize="18dp"-->
-<!--                                                android:text="Total Hour :"-->
-<!--                                                />-->
+            <TextView
+                android:id="@+id/txt_pm2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
 
 
+        </LinearLayout>
 
-<!--                                            <TextView-->
-<!--                                                android:id="@+id/txt_total_hour"-->
-<!--                                                android:layout_width="wrap_content"-->
-<!--                                                android:layout_height="wrap_content"-->
-<!--                                                android:textColor="@color/white"-->
-<!--                                                android:textSize="18dp"-->
-<!--                                                android:text="00"-->
-<!--                                                android:layout_marginLeft="10dp"/>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
 
-
-<!--                                        </LinearLayout>-->
-<!--                                        <LinearLayout-->
-<!--                                            android:layout_width="match_parent"-->
-<!--                                            android:layout_height="wrap_content"-->
-<!--                                            android:layout_marginHorizontal="10dp"-->
-<!--                                            android:orientation="horizontal"-->
-<!--                                            android:layout_marginBottom="10dp">-->
-
-<!--                                            <TextView-->
-<!--                                                android:layout_width="wrap_content"-->
-<!--                                                android:layout_height="wrap_content"-->
-<!--                                                android:textColor="@color/white"-->
-<!--                                                android:textSize="18dp"-->
-<!--                                                android:text="Total Minute :"-->
-<!--                                                />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="PM10 :"
+                />
 
 
 
-<!--                                            <TextView-->
-<!--                                                android:id="@+id/txt_total_minute"-->
-<!--                                                android:layout_width="wrap_content"-->
-<!--                                                android:layout_height="wrap_content"-->
-<!--                                                android:textColor="@color/white"-->
-<!--                                                android:textSize="18dp"-->
-<!--                                                android:text="00"-->
-<!--                                                android:layout_marginLeft="10dp"/>-->
+            <TextView
+                android:id="@+id/txt_pm10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="00"
+                android:layout_marginLeft="3dp"
+             />
 
-<!--                                        </LinearLayout>-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="Oder :"
+                />
+
+
+
+            <TextView
+                android:id="@+id/txt_oder1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="00"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="oder :"
+                />
+
+
+            <TextView
+                android:id="@+id/txt_oder2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="OderLevel :"
+                />
+
+
+
+            <TextView
+                android:id="@+id/txt_oderLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="00"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="Total Pollution :"
+                />
+
+
+
+            <TextView
+                android:id="@+id/txt_total_population"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="00"
+                android:layout_marginLeft="10dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="TotalPollutionLevel :"
+                />
+
+
+            <TextView
+                android:id="@+id/txt_total_population_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="MonitoringEnabled :"
+                />
+
+
+
+            <TextView
+                android:id="@+id/txt_monitoringEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="00"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
 
 
                                     </LinearLayout>
@@ -1125,136 +1329,7 @@
 
                                 </LinearLayout>
 
-<!--                                <LinearLayout-->
-<!--                                    android:layout_width="wrap_content"-->
-<!--                                    android:layout_height="wrap_content"-->
-<!--                                    android:orientation="vertical"-->
 
-<!--                                    >-->
-
-
-<!--                                    <androidx.cardview.widget.CardView-->
-<!--                                        android:id="@+id/card_arrow_up"-->
-<!--                                        android:layout_width="50dp"-->
-<!--                                        android:layout_height="50dp"-->
-<!--                                        android:layout_marginStart="15dp"-->
-<!--                                        android:layout_marginTop="15dp"-->
-<!--                                        android:layout_marginEnd="15dp"-->
-<!--                                        android:layout_marginBottom="15dp"-->
-<!--                                        android:backgroundTint="@color/black"-->
-<!--                                        app:cardCornerRadius="10dp"-->
-<!--                                        app:cardElevation="11dp">-->
-
-<!--                                        <ImageView-->
-<!--                                            android:layout_width="match_parent"-->
-<!--                                            android:layout_height="46dp"-->
-<!--                                            android:layout_gravity="center"-->
-<!--                                            android:src="@drawable/baseline_keyboard_arrow_up" />-->
-
-
-<!--                                    </androidx.cardview.widget.CardView>-->
-
-<!--                                    <TextView-->
-<!--                                        android:layout_width="wrap_content"-->
-<!--                                        android:layout_height="wrap_content"-->
-<!--                                        android:layout_gravity="center"-->
-<!--                                        android:layout_marginTop="5dp"-->
-<!--                                        android:text="Hour"-->
-<!--                                        android:textColor="@color/white"-->
-<!--                                        android:textSize="18dp"-->
-<!--                                        android:textStyle="bold"-->
-
-<!--                                        />-->
-
-<!--                                    <androidx.cardview.widget.CardView-->
-<!--                                        android:id="@id/card_arrow_down"-->
-<!--                                        android:layout_width="50dp"-->
-<!--                                        android:layout_height="50dp"-->
-<!--                                        android:layout_marginStart="15dp"-->
-<!--                                        android:layout_marginTop="15dp"-->
-<!--                                        android:layout_marginEnd="15dp"-->
-<!--                                        android:layout_marginBottom="15dp"-->
-<!--                                        android:backgroundTint="@color/black"-->
-<!--                                        app:cardCornerRadius="10dp"-->
-<!--                                        app:cardElevation="11dp">-->
-
-<!--                                        <ImageView-->
-<!--                                            android:layout_width="50dp"-->
-<!--                                            android:layout_height="50dp"-->
-<!--                                            android:layout_gravity="center"-->
-<!--                                            android:src="@drawable/baseline_keyboard_arrow_down" />-->
-
-
-<!--                                    </androidx.cardview.widget.CardView>-->
-
-<!--                                </LinearLayout>-->
-
-<!--                                <LinearLayout-->
-<!--                                    android:layout_width="wrap_content"-->
-<!--                                    android:layout_height="wrap_content"-->
-<!--                                    android:orientation="vertical"-->
-<!--                                    android:layout_alignParentEnd="true"-->
-<!--                                   android:layout_marginLeft="10dp"-->
-<!--                                    >-->
-
-
-<!--                                    <androidx.cardview.widget.CardView-->
-<!--                                        android:id="@+id/card_arrow_up1"-->
-<!--                                        android:layout_width="50dp"-->
-<!--                                        android:layout_height="50dp"-->
-<!--                                        android:backgroundTint="@color/black"-->
-<!--                                        app:cardCornerRadius="10dp"-->
-<!--                                        android:layout_marginStart="15dp"-->
-<!--                                        android:layout_marginTop="15dp"-->
-<!--                                        android:layout_marginEnd="15dp"-->
-<!--                                        android:layout_marginBottom="15dp"-->
-<!--                                        app:cardElevation="11dp">-->
-
-<!--                                        <ImageView-->
-<!--                                            android:layout_width="50dp"-->
-<!--                                            android:layout_height="50dp"-->
-<!--                                            android:src="@drawable/baseline_keyboard_arrow_up"-->
-<!--                                            android:layout_gravity="center"/>-->
-
-
-
-<!--                                    </androidx.cardview.widget.CardView>-->
-
-<!--                                    <TextView-->
-<!--                                        android:layout_width="wrap_content"-->
-<!--                                        android:layout_height="wrap_content"-->
-<!--                                        android:textColor="@color/white"-->
-<!--                                        android:textSize="18dp"-->
-<!--                                        android:text="Min"-->
-<!--                                        android:textStyle="bold"-->
-<!--                                        android:layout_gravity="center"-->
-<!--                                        android:layout_marginTop="5dp"-->
-
-<!--                                        />-->
-
-<!--                                    <androidx.cardview.widget.CardView-->
-<!--                                        android:id="@+id/card_arrow_down1"-->
-<!--                                        android:layout_width="50dp"-->
-<!--                                        android:layout_height="50dp"-->
-<!--                                        android:backgroundTint="@color/black"-->
-<!--                                        app:cardCornerRadius="10dp"-->
-<!--                                        android:layout_marginStart="15dp"-->
-<!--                                        android:layout_marginTop="15dp"-->
-<!--                                        android:layout_marginEnd="15dp"-->
-<!--                                        android:layout_marginBottom="15dp"-->
-<!--                                        app:cardElevation="11dp">-->
-
-<!--                                        <ImageView-->
-<!--                                            android:layout_width="50dp"-->
-<!--                                            android:layout_height="50dp"-->
-<!--                                            android:src="@drawable/baseline_keyboard_arrow_down"-->
-<!--                                            android:layout_gravity="center"/>-->
-
-
-
-<!--                                    </androidx.cardview.widget.CardView>-->
-
-<!--                                </LinearLayout>-->
 
                             </RelativeLayout>
 
@@ -1262,6 +1337,12 @@
 
 
 
+                            <ProgressBar
+                                android:id="@+id/progressBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:visibility="gone" />
 
 
 

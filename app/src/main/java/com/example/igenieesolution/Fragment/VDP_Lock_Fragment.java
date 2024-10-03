@@ -59,22 +59,7 @@ public class VDP_Lock_Fragment extends Fragment {
         binding.txtLock.setText("Lock");
 
 
-//        libVLC = new LibVLC(getContext());
-//        String url = getString(R.string.rtspUrl);
-//        Media media = new Media(libVLC, Uri.parse(url));
-//        media.addOption("--aout=opensles");
-//        media.addOption("--audio-time-stretch");
-//        media.addOption("-vvv"); // verbosity
-//        org.videolan.libvlc.MediaPlayer mediaPlayer = new org.videolan.libvlc.MediaPlayer(libVLC);
-//        mediaPlayer.setMedia(media);
-//        mediaPlayer.getVLCVout().setVideoSurface(binding.contentMain.videoView.getHolder().getSurface(), binding.contentMain.videoView.getHolder());
-//        mediaPlayer.getVLCVout().setWindowSize(binding.contentMain.videoView.getWidth(), binding.contentMain.videoView.getHeight());
-//        mediaPlayer.getVLCVout().attachViews();
-//        mediaPlayer.play();
 
-
-
-       // String url = "http://192.168.10.166/IGS/bas_api.php";
 
         binding.cardStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -153,7 +138,6 @@ public class VDP_Lock_Fragment extends Fragment {
         // Toggle the lock state
         isLocked = !isLocked;
     }
-
 
 
 }

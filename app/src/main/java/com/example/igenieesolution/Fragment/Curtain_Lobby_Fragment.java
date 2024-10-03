@@ -20,11 +20,11 @@ public class Curtain_Lobby_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding =  FragmentCurtainLobbyBinding.inflate(inflater, container, false);
-        binding.imgCurtain.setImageResource(R.drawable.curtainup);
+        binding.imgCurtain.setImageResource(R.drawable.curtainside);
         binding.cardArrowUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                binding.imgCurtain.setImageResource(R.drawable.curtainup);
+                binding.imgCurtain.setImageResource(R.drawable.curtainside);
                 animateButton(binding.cardArrowUp);
             }
         });
@@ -32,7 +32,7 @@ public class Curtain_Lobby_Fragment extends Fragment {
         binding.cardArrowDown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                binding.imgCurtain.setImageResource(R.drawable.curtaindown);
+                binding.imgCurtain.setImageResource(R.drawable.curtainsidedown);
                 animateButton(binding.cardArrowDown);
             }
         });
