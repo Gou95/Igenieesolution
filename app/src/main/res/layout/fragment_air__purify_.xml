@@ -51,12 +51,11 @@
 
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="300dp"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
+                        android:orientation="horizontal"
                         android:layout_centerInParent="true"
-                        android:background="@drawable/washing_back"
-                        >
+                        android:background="@drawable/washingunder_back">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -68,17 +67,11 @@
                             android:layout_marginStart="10dp"
                             android:textSize="14dp"/>
 
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                        <RelativeLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginHorizontal="10dp"
-                        >
 
-
-
-
+                           >
 
                             <LinearLayout
                                 android:id="@+id/linear_clean"
@@ -86,8 +79,9 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="20dp"
+                                android:layout_centerVertical="true"
                                 android:padding="10dp"
+                                android:layout_marginStart="20dp"
                                 >
 
 
@@ -120,7 +114,8 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="20dp"
                                 android:padding="10dp">
 
 
@@ -145,268 +140,372 @@
 
 
                             </LinearLayout>
-                            <!--                        <LinearLayout-->
-                            <!--                            android:id="@+id/linear_slient"-->
-                            <!--                            android:layout_width="wrap_content"-->
-                            <!--                            android:layout_height="wrap_content"-->
-                            <!--                            android:orientation="vertical"-->
-                            <!--                            android:layout_gravity="center"-->
-                            <!--                            android:layout_marginStart="20dp"-->
-                            <!--                            android:padding="10dp"-->
-                            <!--                            >-->
 
 
-                            <!--                            <ImageView-->
-                            <!--                                android:layout_width="50dp"-->
-                            <!--                                android:layout_height="50dp"-->
-                            <!--                                android:src="@drawable/mute"-->
-                            <!--                                />-->
+                        </RelativeLayout>
 
-                            <!--                            <TextView-->
-                            <!--                                android:layout_width="match_parent"-->
-                            <!--                                android:layout_height="wrap_content"-->
-                            <!--                                android:text="Slient"-->
-                            <!--                                android:textSize="14dp"-->
-                            <!--                                android:layout_marginTop="5dp"-->
-                            <!--                                android:textColor="@color/white"-->
-                            <!--                                android:gravity="center"/>-->
 
 
-
-
-
-                            <!--                        </LinearLayout>-->
-
-
-                            <!--                        <LinearLayout-->
-                            <!--                            android:id="@+id/linear_humidity"-->
-                            <!--                            android:layout_width="wrap_content"-->
-                            <!--                            android:layout_height="wrap_content"-->
-                            <!--                            android:orientation="vertical"-->
-                            <!--                            android:layout_gravity="center"-->
-                            <!--                            android:layout_marginStart="20dp"-->
-                            <!--                            android:padding="10dp"-->
-                            <!--                            >-->
-
-
-                            <!--                            <ImageView-->
-                            <!--                                android:layout_width="50dp"-->
-                            <!--                                android:layout_height="50dp"-->
-                            <!--                                android:src="@drawable/humidity"-->
-                            <!--                                />-->
-
-                            <!--                            <TextView-->
-                            <!--                                android:layout_width="wrap_content"-->
-                            <!--                                android:layout_height="wrap_content"-->
-                            <!--                                android:text="Humidity"-->
-                            <!--                                android:textSize="14dp"-->
-                            <!--                                android:layout_marginTop="5dp"-->
-                            <!--                                android:textColor="@color/white"-->
-                            <!--                                android:gravity="center"/>-->
-
-
-
-
-
-                            <!--                        </LinearLayout>-->
-                            <!--                        <LinearLayout-->
-                            <!--                            android:id="@+id/linear_circulator"-->
-                            <!--                            android:layout_width="wrap_content"-->
-                            <!--                            android:layout_height="wrap_content"-->
-                            <!--                            android:orientation="vertical"-->
-                            <!--                            android:layout_gravity="center"-->
-                            <!--                            android:layout_marginStart="20dp"-->
-                            <!--                            android:padding="10dp">-->
-
-
-                            <!--                            <ImageView-->
-                            <!--                                android:layout_width="50dp"-->
-                            <!--                                android:layout_height="50dp"-->
-                            <!--                                android:src="@drawable/air_circle"-->
-                            <!--                                />-->
-
-                            <!--                            <TextView-->
-                            <!--                                android:layout_width="wrap_content"-->
-                            <!--                                android:layout_height="wrap_content"-->
-                            <!--                                android:text="Circulator"-->
-                            <!--                                android:textSize="14dp"-->
-                            <!--                                android:layout_marginTop="5dp"-->
-                            <!--                                android:textColor="@color/white"-->
-                            <!--                                android:gravity="center"/>-->
-
-
-
-
-
-                            <!--                        </LinearLayout>-->
-                            <!--                        <LinearLayout-->
-                            <!--                            android:id="@+id/linear_baby_care"-->
-                            <!--                            android:layout_width="wrap_content"-->
-                            <!--                            android:layout_height="wrap_content"-->
-                            <!--                            android:orientation="vertical"-->
-                            <!--                            android:layout_gravity="center"-->
-                            <!--                            android:layout_marginStart="20dp"-->
-                            <!--                            android:padding="10dp"-->
-                            <!--                          >-->
-
-
-                            <!--                            <ImageView-->
-                            <!--                                android:layout_width="50dp"-->
-                            <!--                                android:layout_height="50dp"-->
-                            <!--                                android:src="@drawable/baby"-->
-                            <!--                                android:layout_gravity="center"-->
-                            <!--                                />-->
-
-                            <!--                            <TextView-->
-                            <!--                                android:layout_width="wrap_content"-->
-                            <!--                                android:layout_height="wrap_content"-->
-                            <!--                                android:text="Baby Care"-->
-                            <!--                                android:textSize="14dp"-->
-                            <!--                                android:textColor="@color/white"-->
-                            <!--                                android:layout_marginTop="5dp"-->
-                            <!--                              />-->
-
-
-
-
-
-                            <!--                        </LinearLayout>-->
-                            <!--                        <LinearLayout-->
-                            <!--                            android:id="@+id/linear_dual_clean"-->
-                            <!--                            android:layout_width="wrap_content"-->
-                            <!--                            android:layout_height="wrap_content"-->
-                            <!--                            android:orientation="vertical"-->
-                            <!--                            android:layout_gravity="center"-->
-                            <!--                            android:layout_marginStart="20dp"-->
-                            <!--                            android:padding="10dp"-->
-
-                            <!--                        >-->
-
-
-                            <!--                            <ImageView-->
-                            <!--                                android:layout_width="50dp"-->
-                            <!--                                android:layout_height="50dp"-->
-                            <!--                                android:src="@drawable/air_filter"-->
-                            <!--                                android:layout_gravity="center"-->
-                            <!--                                />-->
-
-                            <!--                            <TextView-->
-                            <!--                                android:layout_width="wrap_content"-->
-                            <!--                                android:layout_height="wrap_content"-->
-                            <!--                                android:text="Dual Clean"-->
-                            <!--                                android:textSize="14dp"-->
-                            <!--                                android:layout_marginTop="5dp"-->
-                            <!--                                android:textColor="@color/white"-->
-                            <!--                                android:gravity="center"/>-->
-
-
-
-
-
-                            <!--                        </LinearLayout>-->
-
-                            <!--                        <LinearLayout-->
-                            <!--                            android:id="@+id/linear_audio"-->
-                            <!--                            android:layout_width="wrap_content"-->
-                            <!--                            android:layout_height="wrap_content"-->
-                            <!--                            android:orientation="vertical"-->
-                            <!--                            android:layout_gravity="center"-->
-                            <!--                            android:layout_marginStart="20dp"-->
-                            <!--                            android:padding="10dp"-->
-                            <!--                        >-->
-
-
-                            <!--                            <ImageView-->
-                            <!--                                android:layout_width="50dp"-->
-                            <!--                                android:layout_height="50dp"-->
-                            <!--                                android:src="@drawable/a_letter"-->
-                            <!--                                />-->
-
-                            <!--                            <TextView-->
-                            <!--                                android:layout_width="match_parent"-->
-                            <!--                                android:layout_height="wrap_content"-->
-                            <!--                                android:text="Audio"-->
-                            <!--                                android:textSize="14dp"-->
-                            <!--                                android:layout_marginTop="5dp"-->
-                            <!--                                android:textColor="@color/white"-->
-                            <!--                                android:gravity="center"/>-->
-
-
-
-
-
-                            <!--                        </LinearLayout>-->
-                            <!--                        <LinearLayout-->
-                            <!--                            android:id="@+id/linear_smart"-->
-                            <!--                            android:layout_width="wrap_content"-->
-                            <!--                            android:layout_height="wrap_content"-->
-                            <!--                            android:orientation="vertical"-->
-                            <!--                            android:layout_gravity="center"-->
-                            <!--                            android:layout_marginStart="20dp"-->
-                            <!--                           android:padding="10dp">-->
-
-
-                            <!--                            <ImageView-->
-                            <!--                                android:layout_width="50dp"-->
-                            <!--                                android:layout_height="50dp"-->
-                            <!--                                android:src="@drawable/air_filter1"-->
-                            <!--                                />-->
-
-                            <!--                            <TextView-->
-                            <!--                                android:layout_width="match_parent"-->
-                            <!--                                android:layout_height="wrap_content"-->
-                            <!--                                android:text="Smart"-->
-                            <!--                                android:textSize="14dp"-->
-                            <!--                                android:layout_marginTop="5dp"-->
-                            <!--                                android:textColor="@color/white"-->
-                            <!--                                android:gravity="center"/>-->
-
-
-
-
-
-                            <!--                        </LinearLayout>-->
-
-                            <!--                        <LinearLayout-->
-                            <!--                            android:id="@+id/linear_fast"-->
-                            <!--                            android:layout_width="wrap_content"-->
-                            <!--                            android:layout_height="wrap_content"-->
-                            <!--                            android:orientation="vertical"-->
-                            <!--                            android:layout_gravity="center"-->
-                            <!--                            android:layout_marginStart="20dp"-->
-                            <!--                            android:layout_marginEnd="10dp"-->
-                            <!--                            android:padding="10dp">-->
-
-
-                            <!--                            <ImageView-->
-                            <!--                                android:layout_width="50dp"-->
-                            <!--                                android:layout_height="50dp"-->
-                            <!--                                android:src="@drawable/circle"-->
-                            <!--                                />-->
-
-                            <!--                            <TextView-->
-                            <!--                                android:layout_width="match_parent"-->
-                            <!--                                android:layout_height="wrap_content"-->
-                            <!--                                android:text="Fast"-->
-                            <!--                                android:textSize="14dp"-->
-                            <!--                                android:textColor="@color/white"-->
-                            <!--                                android:gravity="center"/>-->
-
-
-
-
-
-                            <!--                        </LinearLayout>-->
-
-
-
-
-
-
-
-                        </LinearLayout>
 
                     </LinearLayout>
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:background="@drawable/washing_back"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Mode"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:textSize="14dp"/>-->
+
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginHorizontal="10dp"-->
+<!--                        >-->
+
+
+
+
+
+<!--                            <LinearLayout-->
+<!--                                android:id="@+id/linear_clean"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:orientation="vertical"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:layout_marginStart="20dp"-->
+<!--                                android:padding="10dp"-->
+<!--                                >-->
+
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="40dp"-->
+<!--                                    android:layout_height="40dp"-->
+<!--                                    android:src="@drawable/cleanone"-->
+<!--                                    />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="Clean"-->
+<!--                                    android:textSize="14dp"-->
+<!--                                    android:textColor="@color/white"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:layout_marginTop="5dp"/>-->
+
+
+
+
+
+<!--                            </LinearLayout>-->
+
+
+<!--                            <LinearLayout-->
+<!--                                android:id="@+id/linear_sleep"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:orientation="vertical"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:layout_marginStart="20dp"-->
+<!--                                android:padding="10dp">-->
+
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="40dp"-->
+<!--                                    android:layout_height="40dp"-->
+<!--                                    android:src="@drawable/night"-->
+<!--                                    />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="Sleep"-->
+<!--                                    android:textSize="14dp"-->
+<!--                                    android:textColor="@color/white"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:layout_marginTop="5dp"/>-->
+
+
+
+
+
+<!--                            </LinearLayout>-->
+<!--                            &lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:id="@+id/linear_slient"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:orientation="vertical"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:padding="10dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+
+
+<!--                            &lt;!&ndash;                            <ImageView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:src="@drawable/mute"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                />&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:text="Slient"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textSize="14dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textColor="@color/white"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:gravity="center"/>&ndash;&gt;-->
+
+
+
+
+
+<!--                            &lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+
+
+<!--                            &lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:id="@+id/linear_humidity"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:orientation="vertical"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:padding="10dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+
+
+<!--                            &lt;!&ndash;                            <ImageView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:src="@drawable/humidity"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                />&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:text="Humidity"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textSize="14dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textColor="@color/white"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:gravity="center"/>&ndash;&gt;-->
+
+
+
+
+
+<!--                            &lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:id="@+id/linear_circulator"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:orientation="vertical"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:padding="10dp">&ndash;&gt;-->
+
+
+<!--                            &lt;!&ndash;                            <ImageView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:src="@drawable/air_circle"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                />&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:text="Circulator"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textSize="14dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textColor="@color/white"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:gravity="center"/>&ndash;&gt;-->
+
+
+
+
+
+<!--                            &lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:id="@+id/linear_baby_care"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:orientation="vertical"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:padding="10dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                          >&ndash;&gt;-->
+
+
+<!--                            &lt;!&ndash;                            <ImageView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:src="@drawable/baby"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_gravity="center"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                />&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:text="Baby Care"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textSize="14dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textColor="@color/white"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                              />&ndash;&gt;-->
+
+
+
+
+
+<!--                            &lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:id="@+id/linear_dual_clean"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:orientation="vertical"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:padding="10dp"&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;                        >&ndash;&gt;-->
+
+
+<!--                            &lt;!&ndash;                            <ImageView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:src="@drawable/air_filter"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_gravity="center"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                />&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:text="Dual Clean"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textSize="14dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textColor="@color/white"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:gravity="center"/>&ndash;&gt;-->
+
+
+
+
+
+<!--                            &lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:id="@+id/linear_audio"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:orientation="vertical"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:padding="10dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                        >&ndash;&gt;-->
+
+
+<!--                            &lt;!&ndash;                            <ImageView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:src="@drawable/a_letter"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                />&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:text="Audio"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textSize="14dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textColor="@color/white"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:gravity="center"/>&ndash;&gt;-->
+
+
+
+
+
+<!--                            &lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:id="@+id/linear_smart"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:orientation="vertical"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                           android:padding="10dp">&ndash;&gt;-->
+
+
+<!--                            &lt;!&ndash;                            <ImageView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:src="@drawable/air_filter1"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                />&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:text="Smart"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textSize="14dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textColor="@color/white"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:gravity="center"/>&ndash;&gt;-->
+
+
+
+
+
+<!--                            &lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:id="@+id/linear_fast"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:orientation="vertical"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:layout_marginEnd="10dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            android:padding="10dp">&ndash;&gt;-->
+
+
+<!--                            &lt;!&ndash;                            <ImageView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="50dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:src="@drawable/circle"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                />&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:text="Fast"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textSize="14dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:textColor="@color/white"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                android:gravity="center"/>&ndash;&gt;-->
+
+
+
+
+
+<!--                            &lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+
+
+
+
+
+
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
 
 
 
@@ -705,11 +804,15 @@
                                     android:layout_marginHorizontal="30dp"
                                     >
 
+
+
+
                                     <RelativeLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:background="@drawable/washingunder_back"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        android:layout_marginTop="5dp">
 
                                         <LinearLayout
                                             android:id="@+id/linear_clean1"

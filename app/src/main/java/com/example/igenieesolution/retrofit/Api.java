@@ -3,7 +3,7 @@ package com.example.igenieesolution.retrofit;
 
 
 
-import com.example.igenieesolution.Body.AcBody;
+
 import com.example.igenieesolution.Response.AcResponse;
 import com.example.igenieesolution.Response.AirPurifierResponse;
 import com.example.igenieesolution.Response.GetLightResponse;
@@ -16,7 +16,7 @@ import com.example.igenieesolution.Response.WashingResponse;
 
 import okhttp3.MultipartBody;
 import retrofit2.Call;
-import retrofit2.http.Body;
+
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -40,13 +40,6 @@ public interface Api {
     @POST("postData.php")
     Call<RefrigeratorResponse> getRefrigeratorResponse(@Field("id") String id);
 
-    @FormUrlEncoded
-    @POST("setData.php")
-    Call<SetRefrigeratorResponse> updateFreezerTemperature(@Field("id") String id, @Field("id1") String id1);
-
-    @FormUrlEncoded
-    @POST("setData.php")
-    Call<SetRefrigeratorResponse> updateFridgeTemperature(@Field("id") String id, @Field("id1") String id1);
 
     @FormUrlEncoded
     @POST("setData.php")

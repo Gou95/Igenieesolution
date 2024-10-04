@@ -74,11 +74,11 @@ public class LightViewModel extends ViewModel {
 
     }
 
-    public void getLightDataOneTwo(String id1,String id2){
-        isConnecting.setValue(true);
-        repository = LightRepository.getInstance();
-        repository.getLightLiveOneTwo(context,id1,id2,listener);
-    }
+//    public void getLightDataOneTwo(String id1,String id2){
+//        isConnecting.setValue(true);
+//        repository = LightRepository.getInstance();
+//        repository.getLightLiveOneTwo(context,id1,id2,listener);
+//    }
 
     public void getLightDataDimming(String id1,String id2,String id3,String id4){
         isConnecting.setValue(true);

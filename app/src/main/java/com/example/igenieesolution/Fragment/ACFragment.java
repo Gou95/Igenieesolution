@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.igenieesolution.Body.AcBody;
+
 import com.example.igenieesolution.R;
 import com.example.igenieesolution.ViewModel.ACViewModel;
 import com.example.igenieesolution.databinding.FragmentACBinding;

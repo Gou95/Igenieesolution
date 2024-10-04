@@ -183,7 +183,7 @@ public class RefrigeratorFragment extends Fragment {
             binding.imgDoor.setImageResource(expressMode ? R.drawable.open_ref : R.drawable.fridge);
             binding.imgExpressMode.setImageResource(expressMode ? R.drawable.snow_flakeon : R.drawable.snow_flakeoff);
             binding.txtDoorMain.setText(expressMode ? "Open (Main)" : "Close (Main)");
-            binding.txtMode.setText(expressMode ? "ON" : "OFF" );
+            binding.txtExpressMode.setText(expressMode ? "ON" : "OFF" );
 
 //          for (SetRefrigeratorResponse.Doorstatus doorstatus : response.getDoorStatus()){
 //              if (doorstatus != null){
@@ -252,6 +252,7 @@ private void handleFridgeTemp() {
         binding.imgDoor.setImageResource("TRUE".equalsIgnoreCase(isExpressMode) ? R.drawable.open_ref : R.drawable.fridge);
         binding.imgExpressMode.setImageResource("TRUE".equalsIgnoreCase(isExpressMode) ? R.drawable.snow_flakeon :R.drawable.snow_flakeoff);
         binding.txtDoorMain.setText("TRUE".equalsIgnoreCase(isExpressMode) ? "Open (Main)" : "Close (Main)");
+        binding.txtExpressMode.setText("TRUE".equalsIgnoreCase(isExpressMode) ? "ON" : "OFF");
 
         refrigeratorSetTempViewModel.updateExpressMode(deviceId, isExpressMode);
 
@@ -266,15 +267,15 @@ private void handleFridgeTemp() {
 
     private void animateButton(View view) {
         if (!isChecked) {
-            // Start animation for the clicked button
+
             animateScale(view);
 
             isChecked = true;
 
-            // Reset the animation state after the duration of the animation
+
             view.postDelayed(() -> {
                 isChecked = false;
-            }, 1600); // 800ms for scale up + 800ms for scale down
+            }, 1600);
         }
     }
 
