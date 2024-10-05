@@ -23,13 +23,15 @@
             app:cardElevation="11dp"
             android:backgroundTint="@color/black"
 
+
             >
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                >
 
 
                 <TextView
@@ -44,67 +46,280 @@
 
 
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
                     >
 
 
                     <LinearLayout
-                        android:layout_width="300dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_centerInParent="true"
-                        android:background="@drawable/washingunder_back">
+                        android:orientation="vertical"
+                        android:background="@drawable/washing_back"
+                        android:padding="16dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
 
+                        >
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mode"
+                            android:text="Wind Speed"
                             android:textStyle="bold"
                             android:textColor="@color/white"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginStart="10dp"
-                            android:textSize="14dp"/>
+                            android:textSize="15dp"/>
 
-                        <RelativeLayout
-                            android:layout_width="match_parent"
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="30dp"
 
                            >
 
+
                             <LinearLayout
-                                android:id="@+id/linear_clean"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_gravity="center"
-                                android:layout_centerVertical="true"
-                                android:padding="10dp"
-                                android:layout_marginStart="20dp"
+                                android:id="@+id/linear_low"
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/card_gradiantback_color"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginStart="30dp"
+
                                 >
 
 
                                 <ImageView
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
-                                    android:src="@drawable/cleanone"
-                                    />
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/fan_low"/>
+
 
                                 <TextView
-                                    android:layout_width="match_parent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Low"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="5dp"/>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linear_medium"
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/card_gradiantback_color"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginStart="25dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/extractor"/>
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Medium"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:textStyle="bold"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_high"
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/card_gradiantback_color"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginStart="25dp"
+                              >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/fan_high"/>
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="High"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:textStyle="bold"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_power"
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/card_gradiantback_color"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginStart="25dp"
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/on_off"
+                                    android:layout_marginLeft="5dp"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Power "
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_auto"
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/card_gradiantback_color"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginStart="25dp"
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/a_letter"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Auto"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:textStyle="bold"/>
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/washing_back"
+                        android:padding="16dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Mode"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"/>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+
+                            >
+
+
+                            <LinearLayout
+                                android:id="@+id/linear_clean"
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/card_gradiantback_color"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginStart="25dp">
+
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/cleanone"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Clean"
-                                    android:textSize="14dp"
                                     android:textColor="@color/white"
-                                    android:gravity="center"
+                                    android:textSize="15dp"
                                     android:textStyle="bold"
-                                    android:layout_marginTop="5dp"/>
-
-
-
+                                    android:layout_marginLeft="5dp"/>
 
 
                             </LinearLayout>
@@ -112,40 +327,60 @@
 
                             <LinearLayout
                                 android:id="@+id/linear_sleep"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_gravity="center"
-                                android:layout_alignParentEnd="true"
-                                android:layout_marginEnd="20dp"
-                                android:padding="10dp">
-
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/card_gradiantback_color"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginStart="25dp"
+                                >
 
                                 <ImageView
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
-                                    android:src="@drawable/night"
-                                    />
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/night"/>
+
+
 
                                 <TextView
-                                    android:layout_width="match_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Sleep"
-                                    android:textSize="14dp"
                                     android:textColor="@color/white"
-                                    android:gravity="center"
-                                    android:textStyle="bold"
-                                    android:layout_marginTop="5dp"/>
-
-
-
+                                    android:textSize="15dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:textStyle="bold"/>
 
 
                             </LinearLayout>
 
 
-                        </RelativeLayout>
 
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+
+
+
+                        </LinearLayout>
 
 
 
@@ -521,7 +756,7 @@
 
 
 
-                </RelativeLayout>
+                </LinearLayout>
 
 
 
@@ -530,7 +765,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginTop="15dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_marginHorizontal="20dp"
 
 
@@ -544,207 +779,11 @@
 
                         >
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="250dp"
-                            android:orientation="vertical"
-                            android:layout_centerVertical="true"
-                            android:background="@drawable/washing_back"
-                            android:padding="10dp"
 
-                            >
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Wind Speed"
-                                android:textStyle="bold"
-                                android:textColor="@color/white"
-                                android:textSize="15dp"/>
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:orientation="horizontal">
-
-
-                                <LinearLayout
-                                    android:id="@+id/linear_low"
-                                    android:layout_width="100dp"
-                                    android:layout_height="45dp"
-                                    android:background="@drawable/card_gradiantback_color"
-                                    android:orientation="horizontal"
-                                    android:gravity="center">
-
-
-                                    <ImageView
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/fan_low"/>
-
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Low"
-                                        android:textColor="@color/white"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"
-                                        android:layout_marginLeft="5dp"/>
-
-
-                                </LinearLayout>
-
-
-                                <LinearLayout
-                                    android:id="@+id/linear_medium"
-                                    android:layout_width="100dp"
-                                    android:layout_height="45dp"
-                                    android:background="@drawable/card_gradiantback_color"
-                                    android:orientation="horizontal"
-                                    android:gravity="center"
-                                    android:layout_marginLeft="10dp"
-                                    >
-
-                                    <ImageView
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/extractor"/>
-
-
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Medium"
-                                        android:textColor="@color/white"
-                                        android:textSize="14dp"
-                                        android:layout_marginLeft="5dp"
-                                        android:textStyle="bold"/>
-
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
-
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:id="@+id/linear_high"
-                                    android:layout_width="100dp"
-                                    android:layout_height="45dp"
-                                    android:background="@drawable/card_gradiantback_color"
-                                    android:orientation="horizontal"
-                                    android:gravity="center"
-                                    android:layout_marginTop="20dp">
-
-                                    <ImageView
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/fan_high"/>
-
-
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="High"
-                                        android:textColor="@color/white"
-                                        android:textSize="14dp"
-                                        android:layout_marginLeft="5dp"
-                                        android:textStyle="bold"/>
-
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:id="@+id/linear_power"
-                                    android:layout_width="100dp"
-                                    android:layout_height="45dp"
-                                    android:background="@drawable/card_gradiantback_color"
-                                    android:orientation="horizontal"
-                                    android:gravity="center"
-                                    android:layout_marginTop="20dp"
-                                    android:layout_marginLeft="10dp"
-                                    >
-
-
-                                    <ImageView
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/on_off"
-                                        android:layout_marginLeft="5dp"/>
-
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="5dp"
-                                        android:text="Power "
-                                        android:textColor="@color/white"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold" />
-
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
-
-
-                         <LinearLayout
-                             android:layout_width="wrap_content"
-                             android:layout_height="wrap_content"
-                             android:layout_gravity="center"
-                             android:orientation="horizontal">
-
-
-                             <LinearLayout
-                                 android:id="@+id/linear_auto"
-                                 android:layout_width="100dp"
-                                 android:layout_height="45dp"
-                                 android:background="@drawable/card_gradiantback_color"
-                                 android:orientation="horizontal"
-                                 android:gravity="center"
-                                 android:layout_marginTop="20dp">
-
-
-                                 <ImageView
-                                     android:layout_width="25dp"
-                                     android:layout_height="25dp"
-                                     android:src="@drawable/a_letter"/>
-
-
-                                 <TextView
-                                     android:layout_width="wrap_content"
-                                     android:layout_height="wrap_content"
-                                     android:text="Auto"
-                                     android:textColor="@color/white"
-                                     android:textSize="14dp"
-                                     android:layout_marginLeft="5dp"
-                                     android:textStyle="bold"/>
-
-
-                             </LinearLayout>
-
-                         </LinearLayout>
-
-
-
-                        </LinearLayout>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="730dp"
+                            android:layout_width="950dp"
                             android:layout_height="250dp"
-                            android:layout_centerInParent="true"
                             app:cardCornerRadius="10dp"
                             android:layout_marginStart="10dp"
                             app:cardElevation="11dp">
@@ -759,8 +798,8 @@
 
 
                                 <androidx.cardview.widget.CardView
-                                    android:layout_width="200dp"
-                                    android:layout_height="200dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="220dp"
                                     android:backgroundTint="@color/black"
                                     android:layout_marginLeft="10dp"
                                     android:layout_gravity="center"
@@ -812,40 +851,34 @@
                                     <RelativeLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:background="@drawable/washingunder_back"
-                                        android:orientation="horizontal"
                                         android:layout_marginTop="5dp">
+
 
                                         <LinearLayout
                                             android:id="@+id/linear_clean1"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:orientation="vertical"
-                                            android:layout_gravity="center"
-                                            android:layout_marginStart="20dp"
-                                            android:padding="10dp"
-                                            android:visibility="gone"
-                                            >
+                                            android:layout_width="120dp"
+                                            android:layout_height="50dp"
+                                            android:background="@drawable/gradiant_background_color"
+                                            android:orientation="horizontal"
+                                            android:gravity="center"
+                                            android:layout_centerVertical="true"
+                                            android:visibility="gone">
 
 
                                             <ImageView
-                                                android:layout_width="40dp"
-                                                android:layout_height="40dp"
-                                                android:src="@drawable/cleanone"
-                                                />
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:src="@drawable/cleanone"/>
+
 
                                             <TextView
-                                                android:layout_width="match_parent"
+                                                android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:text="Clean"
-                                                android:textSize="14dp"
                                                 android:textColor="@color/white"
-                                                android:gravity="center"
+                                                android:textSize="15dp"
                                                 android:textStyle="bold"
-                                                android:layout_marginTop="5dp"/>
-
-
-
+                                                android:layout_marginLeft="5dp"/>
 
 
                                         </LinearLayout>
@@ -853,113 +886,216 @@
 
                                         <LinearLayout
                                             android:id="@+id/linear_sleep1"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:orientation="vertical"
-                                            android:layout_gravity="center"
-                                            android:layout_marginStart="20dp"
-                                            android:visibility="gone"
-                                            android:padding="10dp">
-
-
-                                            <ImageView
-                                                android:layout_width="40dp"
-                                                android:layout_height="40dp"
-                                                android:src="@drawable/night"
-                                                />
-
-                                            <TextView
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:text="Sleep"
-                                                android:textSize="14dp"
-                                                android:textColor="@color/white"
-                                                android:gravity="center"
-                                                android:textStyle="bold"
-                                                android:layout_marginTop="5dp"/>
-
-
-
-
-
-                                        </LinearLayout>
-
-
-
-                                        <LinearLayout
-                                            android:id="@+id/linear_low2"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:orientation="vertical"
+                                            android:layout_width="120dp"
+                                            android:layout_height="50dp"
+                                            android:background="@drawable/gradiant_background_color"
+                                            android:orientation="horizontal"
                                             android:gravity="center"
-                                            android:layout_centerInParent="true"
-                                            android:layout_marginStart="10dp"
-                                            android:layout_marginTop="10dp"
-                                            android:layout_marginBottom="10dp">
-
+                                            android:layout_centerVertical="true"
+                                            android:visibility="gone"
+                                            >
 
                                             <ImageView
-                                                android:layout_width="40dp"
-                                                android:layout_height="40dp"
-                                                android:src="@drawable/extractor"
-                                                />
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:src="@drawable/night"/>
+
+
 
                                             <TextView
-                                                android:id="@+id/txt_windStrength"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:textSize="14dp"
-                                                android:textStyle="bold"
+                                                android:text="Sleep"
                                                 android:textColor="@color/white"
-                                                android:gravity="center"/>
-
-
-
+                                                android:textSize="15dp"
+                                                android:layout_marginLeft="5dp"
+                                                android:textStyle="bold"/>
 
 
                                         </LinearLayout>
-                                        <LinearLayout
 
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:orientation="vertical"
+
+                                        <LinearLayout
+                                            android:id="@+id/linear_low1"
+                                            android:layout_width="120dp"
+                                            android:layout_height="50dp"
+                                            android:background="@drawable/gradiant_background_color"
+                                            android:orientation="horizontal"
+                                            android:gravity="center"
+                                            android:layout_centerInParent="true"
+                                            android:visibility="gone"
+
+                                            >
+
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:src="@drawable/fan_low"/>
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Low"
+                                                android:textColor="@color/white"
+                                                android:textSize="15dp"
+                                                android:textStyle="bold"
+                                                android:layout_marginLeft="5dp"/>
+
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:id="@+id/linear_medium1"
+                                            android:layout_width="120dp"
+                                            android:layout_height="50dp"
+                                            android:background="@drawable/gradiant_background_color"
+                                            android:orientation="horizontal"
+                                            android:gravity="center"
+                                            android:layout_centerInParent="true"
+                                            android:visibility="gone"
+                                            >
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:src="@drawable/extractor"/>
+
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Medium"
+                                                android:textColor="@color/white"
+                                                android:textSize="15dp"
+                                                android:layout_marginLeft="5dp"
+                                                android:textStyle="bold"/>
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/linear_high1"
+                                            android:layout_width="120dp"
+                                            android:layout_height="50dp"
+                                            android:background="@drawable/gradiant_background_color"
+                                            android:orientation="horizontal"
+                                            android:gravity="center"
+                                            android:layout_centerInParent="true"
+                                            android:visibility="gone"
+                                            >
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:src="@drawable/fan_high"/>
+
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="High"
+                                                android:textColor="@color/white"
+                                                android:textSize="15dp"
+                                                android:layout_marginLeft="5dp"
+                                                android:textStyle="bold"/>
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/linear_power1"
+                                            android:layout_width="120dp"
+                                            android:layout_height="50dp"
+                                            android:background="@drawable/gradiant_background_color"
+                                            android:orientation="horizontal"
+                                            android:gravity="center"
+                                            android:layout_centerInParent="true"
+                                            android:visibility="gone"
+                                            >
+
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:src="@drawable/on_off"
+                                                android:layout_marginLeft="5dp"/>
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:text="Power "
+                                                android:textColor="@color/white"
+                                                android:textSize="15dp"
+                                                android:textStyle="bold" />
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/linear_auto1"
+                                            android:layout_width="120dp"
+                                            android:layout_height="50dp"
+                                            android:background="@drawable/gradiant_background_color"
+                                            android:orientation="horizontal"
+                                            android:gravity="center"
+
+                                            android:layout_centerInParent="true"
+                                            android:visibility="gone"
+                                            >
+
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:src="@drawable/a_letter"/>
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Auto"
+                                                android:textColor="@color/white"
+                                                android:textSize="15dp"
+                                                android:layout_marginLeft="5dp"
+                                                android:textStyle="bold"/>
+
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:id="@+id/linear_power2"
+                                            android:layout_width="120dp"
+                                            android:layout_height="50dp"
+                                            android:orientation="horizontal"
                                             android:gravity="center"
                                             android:layout_alignParentEnd="true"
-                                            android:layout_marginTop="10dp"
-                                            android:layout_marginEnd="15dp"
-                                            android:layout_marginBottom="10dp">
+                                            android:background="@color/red"
+                                            >
 
 
-                                            <androidx.cardview.widget.CardView
-                                                android:id="@+id/card_onOff"
-                                                android:layout_width="40dp"
-                                                android:layout_height="40dp"
-                                                app:cardCornerRadius="20dp"
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:src="@drawable/on_off"
+                                                android:layout_marginLeft="5dp"/>
 
-
-                                                >
-                                                <ImageView
-                                                    android:layout_width="20dp"
-                                                    android:layout_height="20dp"
-                                                    android:src="@drawable/on_off"
-                                                    android:layout_gravity="center"
-                                                    android:id="@+id/power"/>
-
-
-
-                                            </androidx.cardview.widget.CardView>
 
                                             <TextView
                                                 android:id="@+id/txt_onOff"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:textStyle="bold"
-                                                android:textSize="14dp"
+                                                android:layout_marginLeft="5dp"
                                                 android:textColor="@color/white"
-                                                android:gravity="center"/>
-
-
-
+                                                android:textSize="15dp"
+                                                android:textStyle="bold" />
 
 
                                         </LinearLayout>
@@ -973,7 +1109,7 @@
                                         android:layout_height="wrap_content"
                                         android:orientation="vertical"
                                         android:background="@drawable/washingunder_back"
-                                        android:layout_marginTop="10dp"
+                                        android:layout_marginTop="15dp"
                                         >
 
 
@@ -1009,7 +1145,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginHorizontal="10dp">
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1026,8 +1163,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="14dp"
+                android:textSize="14.5dp"
                 android:text="00"
+                android:textStyle="bold"
                 android:layout_marginLeft="10dp"/>
 
 
@@ -1037,6 +1175,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <TextView
@@ -1055,7 +1194,8 @@
                 android:layout_marginLeft="10dp"
                 android:text="00"
                 android:textColor="@color/white"
-                android:textSize="14dp" />
+                android:textStyle="bold"
+                android:textSize="14.5dp" />
 
 
         </LinearLayout>
@@ -1065,6 +1205,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:orientation="horizontal"
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp">
 
             <TextView
@@ -1082,8 +1223,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="14dp"
+                android:textSize="14.5dp"
                 android:text="00"
+                android:textStyle="bold"
                 android:layout_marginLeft="3dp"
              />
 
@@ -1102,7 +1244,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginHorizontal="10dp">
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1119,8 +1262,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="14dp"
+                android:textSize="14.5dp"
                 android:text="00"
+                android:textStyle="bold"
                 android:layout_marginLeft="10dp"/>
 
 
@@ -1130,7 +1274,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1148,7 +1293,8 @@
                 android:layout_marginLeft="10dp"
                 android:text="00"
                 android:textColor="@color/white"
-                android:textSize="14dp" />
+                android:textSize="14.5dp"
+                android:textStyle="bold"/>
 
 
         </LinearLayout>
@@ -1157,7 +1303,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1174,8 +1321,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="14dp"
+                android:textSize="14.5dp"
                 android:text="00"
+                android:textStyle="bold"
                 android:layout_marginLeft="10dp"/>
 
 
@@ -1193,6 +1341,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginTop="5dp"
            >
 
             <TextView
@@ -1210,9 +1359,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="14dp"
+                android:textSize="14.5dp"
                 android:text="00"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
 
 
 
@@ -1221,7 +1371,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <TextView
@@ -1240,7 +1390,8 @@
                 android:layout_marginLeft="10dp"
                 android:text="00"
                 android:textColor="@color/white"
-                android:textSize="14dp" />
+                android:textSize="14.5dp"
+                android:textStyle="bold"/>
 
 
         </LinearLayout>
@@ -1248,6 +1399,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <TextView
@@ -1265,9 +1417,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="14dp"
+                android:textSize="14.5dp"
                 android:text="00"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
 
 
         </LinearLayout>

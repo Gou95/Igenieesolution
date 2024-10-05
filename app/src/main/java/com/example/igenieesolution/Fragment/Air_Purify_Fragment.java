@@ -55,6 +55,7 @@ public class Air_Purify_Fragment extends Fragment {
         }
 
 
+
         return binding.getRoot();
     }
 
@@ -68,7 +69,7 @@ public class Air_Purify_Fragment extends Fragment {
 
         binding.linearClean.setOnClickListener(view -> handleJobMode("CLEAN"));
         binding.linearSleep.setOnClickListener(view -> handleJobMode("SLEEP"));
-        binding.cardOnOff.setOnClickListener(view -> togglePowerState());
+        binding.linearPower2.setOnClickListener(view -> togglePowerState());
         binding.linearLow.setOnClickListener(view -> handleWindMode("LOW"));
         binding.linearMedium.setOnClickListener(view -> handleWindMode("MID"));
         binding.linearHigh.setOnClickListener(view -> handleWindMode("HIGH"));
@@ -120,12 +121,11 @@ public class Air_Purify_Fragment extends Fragment {
             setDefaultAirQualityData();
         }
         isPowerOn = "POWER_ON".equals(res.getOperation().getAirPurifierOperationMode());
-        binding.cardOnOff.setCardBackgroundColor(isPowerOn ? Color.GREEN : Color.RED);
+        binding.linearPower2.setBackgroundColor(isPowerOn ? Color.GREEN : Color.RED);
         binding.txtOnOff.setText(isPowerOn ? "ON" : "OFF");
 
         String windStrength = res.getAirFlow().getWindStrength();
-        binding.txtWindStrength.setText(windStrength);
-
+        updateUILayoutairPurifierWindMode(windStrength);
         AppSession.getInstance(getContext()).putString(Constants.AIRWIND,res.getAirFlow().getWindStrength());
         AppSession.getInstance(getContext()).putString(Constants.AIRMODE,res.getAirPurifierJobMode().getCurrentJobMode());
         updateUILayoutairPurifierJobMode(AppSession.getInstance(getContext()).getString(Constants.AIRMODE));
@@ -139,19 +139,41 @@ public class Air_Purify_Fragment extends Fragment {
 
     private void updateUILayoutairPurifierWindMode(String wind) {
         if ("LOW".equals(wind)){
-            
+            binding.linearLow1.setVisibility(View.VISIBLE);
+            binding.linearMedium1.setVisibility(View.GONE);
+            binding.linearHigh1.setVisibility(View.GONE);
+            binding.linearPower1.setVisibility(View.GONE);
+            binding.linearAuto1.setVisibility(View.GONE);
         }
 
         else if ("MID".equals(wind)) {
-
+            binding.linearLow1.setVisibility(View.GONE);
+            binding.linearMedium1.setVisibility(View.VISIBLE);
+            binding.linearHigh1.setVisibility(View.GONE);
+            binding.linearPower1.setVisibility(View.GONE);
+            binding.linearAuto1.setVisibility(View.GONE);
         }
         else if ("HIGH".equals(wind)) {
-
+            binding.linearLow1.setVisibility(View.GONE);
+            binding.linearMedium1.setVisibility(View.GONE);
+            binding.linearHigh1.setVisibility(View.VISIBLE);
+            binding.linearPower1.setVisibility(View.GONE);
+            binding.linearAuto1.setVisibility(View.GONE);
         }
         else if ("POWER".equals(wind)) {
+            binding.linearLow1.setVisibility(View.GONE);
+            binding.linearMedium1.setVisibility(View.GONE);
+            binding.linearHigh1.setVisibility(View.GONE);
+            binding.linearPower1.setVisibility(View.VISIBLE);
+            binding.linearAuto1.setVisibility(View.GONE);
 
         }
         else if ("AUTO".equals(wind)) {
+            binding.linearLow1.setVisibility(View.GONE);
+            binding.linearMedium1.setVisibility(View.GONE);
+            binding.linearHigh1.setVisibility(View.GONE);
+            binding.linearPower1.setVisibility(View.GONE);
+            binding.linearAuto1.setVisibility(View.VISIBLE);
 
         }
     }
@@ -189,7 +211,7 @@ private void handleWindMode(String windMode){
             showLoader(true);
             airPurifierViewModel.setAirPurifierData(deviceId, mode);
             isPowerOn = !isPowerOn;
-            binding.cardOnOff.setCardBackgroundColor(isPowerOn ? Color.GREEN : Color.RED);
+            binding.linearPower2.setBackgroundColor(isPowerOn ? Color.GREEN : Color.RED);
             binding.txtOnOff.setText(isPowerOn ? "ON" : "OFF");
         } else {
             Toast.makeText(getContext(), "Device ID not found", Toast.LENGTH_SHORT).show();
